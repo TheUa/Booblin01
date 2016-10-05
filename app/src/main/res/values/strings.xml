@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Booblin</string>
+
+
+    <string name="on">ОК</string>
+    <string name="off">Отмена</string>
+
+
+    <string-array name="boohlo">
+        <item>Виски</item>
+        <item>Водка</item>
+        <item>Ликеры</item>
+        <item>Пиво</item>
+        <item>Вино</item>
+        <item>Текила</item>
+    </string-array>
+
+    <string-array name="visky">
+        <item>Jameson</item>
+        <item>Jameson 12</item>
+        <item>Bushmills</item>
+        <item>Bushmills 10</item>
+        <item>Bushmills Black Bush</item>
+        <item>Red Label</item>
+        <item>Black Label</item>
+        <item>Gold Label</item>
+        <item>Bells</item>
+        <item>Jack Daniels</item>
+        <item>Jack Daniels Single Barel</item>
+        <item>Singleton</item>
+        <item>Chivas Regal</item>
+    </string-array>
+
+    <string-array name="vodka">
+        <item>Nemiroff</item>
+        <item>Nemiroff Lex</item>
+        <item>Nemiroff с перцем</item>
+        <item>Grey Goose</item>
+        <item>Smirnoff</item>
+    </string-array>
+
+    <string-array name="beer">
+        <item>Guinness</item>
+        <item>Kilkenny</item>
+        <item>Harp</item>
+        <item>Hoegaarden</item>
+        <item>Leffe Blonde</item>
+        <item>Leffe Brown</item>
+        <item>Corona Extra</item>
+        <item>Warschtainer</item>
+    </string-array>
+
+    <string-array name="biter">
+        <item>Jagermeister</item>
+        <item>Becherovka</item>
+        <item>Martini Bianco</item>
+        <item>Martini Rosso</item>
+        <item>Martini Extr Dry</item>
+        <item>Sambuka</item>
+        <item>Pisang</item>
+        <item>Triple Sec</item>
+        <item>Peach Tree</item>
+        <item>Absent</item>
+        <item>Baileys</item>>
+        <item>Khalua</item>
+    </string-array>
+
+
+    <string-array name="shot">
+        <item>Gordons</item>
+        <item>Jose Cuervo Silver</item>
+        <item>Jose Cuervo Gold</item>
+        <item>Cap.Morg. Gold </item>
+        <item>Cap.Morg. White </item>
+        <item>Cap.Morg. Jamaica Black </item>
+        <item>Cap.Morg. Spiced </item>
+    </string-array>
+
+    <string-array name="cola">
+        <item>Coca-Cola</item>
+        <item>Sprite</item>
+        <item>Тоник</item>
+        <item>Моршин б.г.</item>
+        <item>Моршин газ.</item>
+        <item>Боржоми</item>
+        <item>Red Bull</item>
+
+    </string-array>
+
+    <string-array name="point">
+        <item>-1000</item>
+        <item>-950</item>
+        <item>-900</item>
+        <item>-850</item>
+        <item>-800</item>
+        <item>-750</item>
+        <item>-700</item>
+        <item>-650</item>
+        <item>-600</item>
+        <item>-550</item>
+        <item>-500</item>
+        <item>-450</item>
+        <item>-400</item>
+        <item>-350</item>
+        <item>-300</item>
+        <item>-250</item>
+        <item>-200</item>
+        <item>-150</item>
+        <item>-100</item>
+        <item>-50</item>
+        <item>0</item>
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+        <item>550</item>
+        <item>600</item>
+        <item>650</item>
+        <item>700</item>
+        <item>750</item>
+        <item>800</item>
+        <item>850</item>
+        <item>900</item>
+        <item>950</item>
+        <item>1000</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+
+</resources>
