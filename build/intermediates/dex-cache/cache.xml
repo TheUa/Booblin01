@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="21a4e966128d7eb37b10239375b7f7fbdb7d2e18">
+        sha1="237c71136449740557b2e64d30e3d34137f7c7ef">
         <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_18542d883fbf1913d01e6616ca6c6864c0db9b2c\classes.dex" />
     </item>
     <item
@@ -18,6 +18,33 @@
         revision="23.0.3"
         sha1="f62e763609f65e47dc6c498760a4accf02776788">
         <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.1.1_9cfdbe8d82a2f1fd106277e0b8bb1b0d9fd8fef5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_7b99f647b7586da551b702fb3d98ff35b6cc222a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\cn.aigestudio.wheelpicker\WheelPicker\1.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f914a11c31b08f76aa721e0197601685a6aa7d07">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\cn.aigestudio.wheelpicker-WheelPicker-1.1.1_96a0d6c76af9e5704245eefe2b1af960b501d3a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c0ee4eaa2ce63fe1f50be2f3cc534de3f2fbe654">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_047d2d2794ea94e28ed8b90183396bbd2f93aace\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,15 +102,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_7b99f647b7586da551b702fb3d98ff35b6cc222a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -93,30 +111,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\cn.aigestudio.wheelpicker\WheelPicker\1.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="f914a11c31b08f76aa721e0197601685a6aa7d07">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\cn.aigestudio.wheelpicker-WheelPicker-1.1.1_96a0d6c76af9e5704245eefe2b1af960b501d3a0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="787871951412550519b0222aba3c9df4cea49875">
         <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.1.1_63e2d6babe7a242dd29d6cf77ff93e0d1d52b5bb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="aaf5a0d5d743d96a94aa0273858cedb13ae93aa6">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_047d2d2794ea94e28ed8b90183396bbd2f93aace\classes.dex" />
     </item>
 
 </items>

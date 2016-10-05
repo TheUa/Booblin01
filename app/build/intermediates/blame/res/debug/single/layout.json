@@ -260,12 +260,12 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recyclerview_item.xml",
-        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\layout\\recyclerview_item.xml"
-    },
-    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recyclerview_item.xml",
+        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\layout\\recyclerview_item.xml"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",

@@ -30,7 +30,7 @@
             android:id="@+id/drink_second"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:text="Jameson"
             android:layout_margin="16dp"
             android:layout_toRightOf="@+id/id_second" />
@@ -40,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="sdds"
+            android:textSize="18sp"
             android:layout_alignParentRight="true"
             android:layout_margin="16dp"/>
 

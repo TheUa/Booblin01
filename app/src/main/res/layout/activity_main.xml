@@ -13,6 +13,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         app:layout_scrollFlags="scroll|enterAlways"
+        android:elevation="8dp"
         app:popupTheme="@style/AppTheme">
 
     </android.support.v7.widget.Toolbar>
@@ -26,6 +27,7 @@
         app:tabGravity="fill"
         android:background="?attr/colorPrimary"
         android:gravity="center_horizontal"
+        android:elevation="8dp"
         app:tabMode="fixed" />
 
     <android.support.v4.view.ViewPager

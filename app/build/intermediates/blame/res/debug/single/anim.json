@@ -48,12 +48,12 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\anim\\grow_from_bottom.xml",
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\anim\\grow_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",

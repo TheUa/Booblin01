@@ -4,6 +4,8 @@
 
     <string name="on">ОК</string>
     <string name="off">Отмена</string>
+    <string name="exit_toast">Для выхода из программы нажмите еще раз</string>
+    <string name="all">Итого: </string>
 
 
     <string-array name="boohlo">

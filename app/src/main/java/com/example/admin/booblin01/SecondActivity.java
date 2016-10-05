@@ -408,11 +408,4 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
     public void onItemSelected(WheelPicker picker, Object data, int position) {
         Log.e("FUCK", "=+-" + data.toString());
     }
-
-//    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//        Intent intent = new Intent(SecondActivity.this, MainActivity.class);
-//        startActivity(intent);
-//    }
 }

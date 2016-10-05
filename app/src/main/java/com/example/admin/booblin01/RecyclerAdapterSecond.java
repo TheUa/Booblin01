@@ -25,8 +25,8 @@ public class RecyclerAdapterSecond extends RecyclerView.Adapter<RecyclerAdapterS
 
         public ViewHolder(View v) {
             super(v);
-            secondDrink = (TextView) v.findViewById(R.id.drink_second);
-            secondDate = (TextView) v.findViewById(R.id.data_second);
+            secondDrink = (TextView) v.findViewById(R.id.data_second);
+            secondDate = (TextView) v.findViewById(R.id.drink_second);
             secondID = (TextView) v.findViewById(R.id.id_second);
         }
     }

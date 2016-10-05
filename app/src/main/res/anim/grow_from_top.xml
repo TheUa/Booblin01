@@ -9,7 +9,7 @@
         android:fillAfter="false"
         android:duration="400"
         android:pivotX = "100%"
-        android:pivotY = "20%"
+        android:pivotY = "80%"
         />
     <translate
         android:fromYDelta="0"

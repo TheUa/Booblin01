@@ -16,6 +16,8 @@ import java.util.ArrayList;
 
 public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
 
+    private Context mContext;
+
     public static final String DATABASE_NAME = "mydatabase.db";
     public static final int DATABASE_VERSION = 1;
 
@@ -109,7 +111,9 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        this.mContext = context;
     }
+
 
     public DatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory,
                           int version) {
@@ -195,9 +199,9 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
 
         ArrayList contactList = new ArrayList<>();
         NewsItem newsItem = new NewsItem();
-        newsItem.setSecond_id("Итого: ");
+//        newsItem.setSecond_id("Итого: ");
         newsItem.setSecond_headline(getSum(newsItem, string));
-        newsItem.setSecond_data("грамм");
+        newsItem.setSecond_data(mContext.getString(R.string.all));
         contactList.add(newsItem);
         // Выбираем всю таблицу
         String selectQuery = "SELECT * FROM " + string;
