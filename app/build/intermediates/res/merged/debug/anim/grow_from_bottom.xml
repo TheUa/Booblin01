@@ -10,7 +10,7 @@
         android:startOffset="200"
         android:duration="400"
         android:pivotX = "100%"
-        android:pivotY = "90%"
+        android:pivotY = "80%"
         />
     <translate
         android:fromYDelta="50%"

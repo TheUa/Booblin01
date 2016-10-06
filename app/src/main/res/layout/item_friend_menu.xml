@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margintop="10dp"
+    android:background="#E0E0E0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginleft="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nick" />
+
+        <TextView
+            android:id="@+id/m_Nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginleft="5dp"
+            android:text="empty" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginleft="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sex"/>
+
+        <TextView
+            android:id="@+id/m_Sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginleft="5dp"
+            android:text="man"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginleft="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textBdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="brithday_"/>
+
+        <TextView
+            android:id="@+id/m_Bdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginleft="5dp"
+            android:layout_weight="1"
+            android:text="_17_2_1985"/>
+
+        <ImageButton
+            android:id="@+id/imageEditdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginright="7dp"
+            android:adjustviewbounds="true"
+            android:background="@android:color/transparent"
+            android:contentdescription="@string/todo"
+            android:scaletype="fitCenter"
+            android:src="@android:drawable/ic_menu_edit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginleft="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="template_"/>
+
+        <TextView
+            android:id="@+id/m_Template"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginleft="5dp"
+            android:layout_weight="1"
+            android:text="temp_name"/>
+
+        <ImageButton
+            android:id="@+id/imageSelectTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginright="7dp"
+            android:adjustviewbounds="true"
+            android:background="@android:color/transparent"
+            android:contentdescription="@string/todo"
+            android:scaletype="fitCenter"
+            android:src="@android:drawable/ic_menu_edit"/>
+    </LinearLayout>
+
+</LinearLayout>

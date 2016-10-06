@@ -4,33 +4,40 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="183048273437891"
+    timestamp="241409954060852"
     token="-8916408764759974414"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="4061" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="2014" />
+        duration="0" />
     <task
         name="verifier"
-        duration="618" />
+        duration="0" />
 
     <artifact
-        location="C:\WorkFile\Booblin01\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="183048273437891"
+        timestamp="240233651428114"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\WorkFile\Booblin01\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="241409954060852"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 /**
  * Created by Admin on 04.08.2016.
@@ -20,7 +21,7 @@ public class SumFragment extends Fragment {
     private RecyclerView recyclerView;
     private DatabaseHelper databaseHelper;
     private RecyclerAdapterSecond adapter;
-    private ArrayList<String> entries = new ArrayList<String>();
+    private ArrayList entries = new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -30,7 +31,8 @@ public class SumFragment extends Fragment {
 
         recyclerView = (RecyclerView) view.findViewById(R.id.sumRecycler);
 
-        adapter = new RecyclerAdapterSecond(getNewItem());
+        entries = getNewItem();
+        adapter = new RecyclerAdapterSecond(entries);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         RecyclerView.ItemAnimator itemAnimator = new DefaultItemAnimator();
 
@@ -39,6 +41,7 @@ public class SumFragment extends Fragment {
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL); // необязательно
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setItemAnimator(itemAnimator);
+        adapter.notifyDataSetChanged();
 
 
         return view;
@@ -117,14 +120,19 @@ public class SumFragment extends Fragment {
         return results;
     }
 
+    public void reselect(){
+        entries.clear();
+        entries.addAll(getNewItem());
+        adapter = new RecyclerAdapterSecond(entries);
+        adapter.notifyDataSetChanged();
+    }
     @Override
     public void onResume() {
         super.onResume();
-        getNewItem().clear();
-        getNewItem().add(getNewItem());
-        adapter = new RecyclerAdapterSecond(getNewItem());
+        entries.clear();
+        entries.addAll(getNewItem());
+        adapter = new RecyclerAdapterSecond(entries);
         adapter.notifyDataSetChanged();
         Log.e("FUCK", "resume 0.3");
-
     }
 }

@@ -94,7 +94,7 @@ public class MinusFragment extends Fragment {
                                         break;
                                     case 6:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[5]);
+                                        intent.putExtra(KEY, visky[6]);
                                         startActivity(intent);
                                         break;
                                     case 7:

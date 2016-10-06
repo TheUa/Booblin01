@@ -12,21 +12,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\jars\classes.jar"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="f62e763609f65e47dc6c498760a4accf02776788">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.1.1_9cfdbe8d82a2f1fd106277e0b8bb1b0d9fd8fef5\classes.dex" />
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_21e7ef6fe4466b1f8884f179ccfea63026c9514e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_7b99f647b7586da551b702fb3d98ff35b6cc222a\classes.dex" />
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_efd182c4d2c30b342b30fb83a51d8ec8e84291d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.2.1_caeb77e48586f93f79d6e0f4c7ffd52e95339b58\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -39,6 +48,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_660e3b21354d5deec5725fbfb7fce106b5f35ccc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_6a7cb3dd499f22b81bd573db7ff617ad976d4789\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\WorkFile\Booblin01\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -48,75 +75,129 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.1.1_37c4dc051a16a99bd580aac5abacdc4f2505e240\classes.dex" />
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_13191a744c614256d7a536be5dada790ad6d6a00\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.1.1_d8b048c9aa95eab4e080bd2b661ad6d2d6793bb3\classes.dex" />
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_5b41927f18f69705555b3f72baf0d31ac6f6265e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\preference-v7\24.1.1\jars\classes.jar"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="9a7ba05f90b4153e812d1aed2b9f2e4d9208eb01">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-preference-v7-24.1.1_7afb1f6183cfcda6ec738fb6caa6b5694867e159\classes.dex" />
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_9969dffa10e9540b3f23157371cd77a6bcd4ec1c\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\jars\classes.jar"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.1.1_7bb938a0b3d6ee761b85d53354dde1deaa74d9ca\classes.dex" />
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_bd541c435bc2d73d603463f9ec00bbd13e4039ea\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\design\24.1.1\jars\classes.jar"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\preference-v7\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.1.1_bee39100fd2582ba05498c55ae42af2e13ca683d\classes.dex" />
+        sha1="eb5d8b5c47b4e5c0184a7986a26bc12cfc51cde3">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-preference-v7-24.2.1_3789f69ddab56f526965547af769dc69eb7b11e6\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="6d7d803871e3203465f71a163e7af104f807b446">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.1.1_5f62f39337ffe9cbdb5a808f623d59d711f0ca71\classes.dex" />
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_6b9032f64ebd6ca424cd348c2c3b2a6b032265cd\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.1.1\jars\classes.jar"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.1.1_622b65601b6251c205f11486dd829beacef015e6\classes.dex" />
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_eba86e9d533a47cf25212524c18af263fb9ccdc3\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.1\jars\classes.jar"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="787871951412550519b0222aba3c9df4cea49875">
-        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.1.1_63e2d6babe7a242dd29d6cf77ff93e0d1d52b5bb\classes.dex" />
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_5358e6c681a1303bd7b55f0a75a8ab6945c1573d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_954b896803189d9b9116edb6ef721d342a843b61\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_b315ecae208ee54773c3418f2e50c6e3ff5db881\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_14237dba19a8cc14bf001b302a4e178ea15a5826\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_55d355b17f574ab0908212014f4dd06332c2bde7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1b467f8637fbb7ab1ccfee715cf39c555140899d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\WorkFile\Booblin01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_570daf79a912ecd9fb633cbc1ebfcba4d57b6c18\classes.dex" />
     </item>
 
 </items>

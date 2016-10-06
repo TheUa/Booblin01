@@ -3,9 +3,11 @@ package com.example.admin.booblin01;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -37,6 +39,9 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
     private RecyclerAdapterSecond adapter;
     private ArrayList setArchiveDB;
     private Intent intent;
+    private Bundle extras;
+    private String[] visky;
+    private ArrayList entries = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +61,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         final CollapsingToolbarLayout collapsingToolbarLayout =
                 (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
         collapsingToolbarLayout.setTitle(" ");
+        collapsingToolbarLayout.setCollapsedTitleTextColor(Color.WHITE);
         AppBarLayout appBarLayout = (AppBarLayout) findViewById(R.id.app_bar);
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             boolean isShow = false;
@@ -67,12 +73,12 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     scrollRange = appBarLayout.getTotalScrollRange();
                 }
                 if (scrollRange + verticalOffset == 0) {
-                    if (extras != null){
+                    if (extras != null) {
                         collapsingToolbarLayout.setTitle(test);
                     }
 
                     isShow = true;
-                } else if(isShow) {
+                } else if (isShow) {
                     collapsingToolbarLayout.setTitle(" ");//carefull there should a space between double quote otherwise it wont work
                     isShow = false;
                 }
@@ -82,8 +88,6 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         View fabClick = findViewById(R.id.fab_click);
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerSecond);
-
-
 
         if (extras != null) {
             if (test.equals(visky[0])) {
@@ -219,7 +223,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                 });
             }
         }
-        adapter = new RecyclerAdapterSecond(setArchiveDB);
+        entries = setArchiveDB;
+        adapter = new RecyclerAdapterSecond(entries);
         linearLayoutManager = new LinearLayoutManager(this);
         RecyclerView.ItemAnimator itemAnimator = new DefaultItemAnimator();
 
@@ -242,7 +247,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
             }
 
             @Override
-            public void onLongClick(View view, int position) {
+            public void onLongClick(View view, final int position) {
 
                 Object object = setArchiveDB.get(position);
 
@@ -261,98 +266,109 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                                             test = extras.getString(KEY);
                                             if (test.equals(visky[0])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_JAMESON);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[1])) {
+                                            } else if (test.equals(visky[1])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_JAMESON12);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[2])) {
+                                            } else if (test.equals(visky[2])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BUSHMILLS);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[3])) {
+                                            } else if (test.equals(visky[3])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BUSHMILLS10);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[4])) {
+                                            } else if (test.equals(visky[4])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BUSHMILLS_BLACK);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[5])) {
+                                            } else if (test.equals(visky[5])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_RED_LABEL);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[6])) {
+                                            } else if (test.equals(visky[6])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BLACK_LABEL);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[7])) {
+                                            } else if (test.equals(visky[7])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_GOLD_LABEL);
-                                            }
-                                        } if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[8])) {
+                                            } else if (test.equals(visky[8])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BELLS);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[9])) {
+                                            } else if (test.equals(visky[9])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_DJACK_DANIELS);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[10])) {
+                                            } else if (test.equals(visky[10])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_DJACK_SINGLE);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[11])) {
+                                            } else if (test.equals(visky[11])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_SINGLETON);
-                                            }
-                                        }
-                                        if (extras != null) {
-                                            test = extras.getString(KEY);
-                                            if (test.equals(visky[12])) {
+                                            } else if (test.equals(visky[12])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_CHIWAS_REGAL);
                                             }
                                         }
 
-
+                                        adapter.notifyDataSetChanged();
                                         Intent intent = getIntent();
                                         finish();
                                         startActivity(intent);
                                     }
-                                })
-                        .setNegativeButton(getString(R.string.off),
-                                new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog,
-                                                        int id) {
-                                        dialog.cancel();
-                                    }
-                                })
-                        .show();
+                                }
+                        )
+                        .
+
+                                setNegativeButton(getString(R.string.off),
+
+                                        new DialogInterface.OnClickListener()
+
+                                        {
+                                            @Override
+                                            public void onClick(DialogInterface dialog,
+                                                                int id) {
+                                                dialog.cancel();
+                                            }
+                                        }
+
+                                )
+                        .
+
+                                show();
             }
-        }));
+        }
+
+        ));
     }
+
+    public ArrayList addRecyclerList() {
+        if (extras != null) {
+            if (test.equals(visky[0])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_JAMESON);
+            }
+            if (test.equals(visky[1])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_JAMESON12);
+            }
+            if (test.equals(visky[2])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS);
+            }
+            if (test.equals(visky[3])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS10);
+            }
+            if (test.equals(visky[4])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS_BLACK);
+            }
+            if (test.equals(visky[5])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_RED_LABEL);
+            }
+            if (test.equals(visky[6])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BLACK_LABEL);
+            }
+            if (test.equals(visky[7])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_GOLD_LABEL);
+            }
+            if (test.equals(visky[8])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BELLS);
+            }
+            if (test.equals(visky[9])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_DJACK_DANIELS);
+            }
+            if (test.equals(visky[10])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_DJACK_SINGLE);
+            }
+            if (test.equals(visky[11])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_SINGLETON);
+            }
+            if (test.equals(visky[12])) {
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_CHIWAS_REGAL);
+            }
+        }
+        return setArchiveDB;
+    }
+
     private void customAlert(final String string) {
         AlertDialog alertDialog;
         final List<Integer> data = new ArrayList<>();
@@ -368,8 +384,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         input.setData(data);
         input.setCurved(true);
         input.setIndicator(true);
-        input.setIndicatorColor(getResources().getColor(R.color.datapickerGrayLines));
-        input.setSelectedItemTextColor(getResources().getColor(R.color.datapickerBlackLines));
+        input.setIndicatorColor(R.color.datapickerGrayLines);
+        input.setSelectedItemTextColor(R.color.datapickerBlackLines);
         input.setAtmospheric(true);
         input.setVisibleItemCount(6);
         input.setSelectedItemPosition(20);
@@ -379,15 +395,22 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
             public void onClick(DialogInterface dialog, int which) {
                 int id = input.getCurrentItemPosition();
                 Log.e("FUCK", "точка: " + point[id]);
-                if (point[id]!=0){
-                Calendar c = Calendar.getInstance();
-                SimpleDateFormat df = new SimpleDateFormat("dd MMM yyyy");
-                String formattedDate = df.format(c.getTime());
-                databaseHelper.addNewsItem(new NewsItem(formattedDate, Integer.parseInt(point[id].toString())), string);
+                if (point[id] != 0) {
+                    Calendar c = Calendar.getInstance();
+                    SimpleDateFormat df = new SimpleDateFormat("dd MMM yyyy");
+                    String formattedDate = df.format(c.getTime());
+                    databaseHelper.addNewsItem(new NewsItem(formattedDate, Integer.parseInt(point[id].toString())), string);
+
+//                    entries.clear();
+//                    entries.addAll(addRecyclerList());
+//                    adapter = new RecyclerAdapterSecond(entries);
+//                    recyclerView.setAdapter(adapter);
+//                    adapter.notifyDataSetChanged();
                 intent = getIntent();
                 finish();
                 startActivity(intent);
-            }}
+                }
+            }
         });
         builder.setNegativeButton(getText(R.string.off), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
@@ -404,6 +427,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         alertDialog.show();
 
     }
+
     @Override
     public void onItemSelected(WheelPicker picker, Object data, int position) {
         Log.e("FUCK", "=+-" + data.toString());
