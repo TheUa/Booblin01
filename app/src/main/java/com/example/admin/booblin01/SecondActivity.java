@@ -401,14 +401,11 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     String formattedDate = df.format(c.getTime());
                     databaseHelper.addNewsItem(new NewsItem(formattedDate, Integer.parseInt(point[id].toString())), string);
 
-//                    entries.clear();
-//                    entries.addAll(addRecyclerList());
-//                    adapter = new RecyclerAdapterSecond(entries);
-//                    recyclerView.setAdapter(adapter);
-//                    adapter.notifyDataSetChanged();
-                intent = getIntent();
-                finish();
-                startActivity(intent);
+
+                    onResume();
+//                intent = getIntent();
+//                finish();
+//                startActivity(intent);
                 }
             }
         });
@@ -431,5 +428,17 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
     @Override
     public void onItemSelected(WheelPicker picker, Object data, int position) {
         Log.e("FUCK", "=+-" + data.toString());
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.e("FUCK", "RESUME");
+        entries.clear();
+        entries.addAll(addRecyclerList());
+        adapter = new RecyclerAdapterSecond(entries);
+        recyclerView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+
     }
 }

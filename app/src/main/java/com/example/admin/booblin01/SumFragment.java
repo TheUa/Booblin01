@@ -132,6 +132,7 @@ public class SumFragment extends Fragment {
         entries.clear();
         entries.addAll(getNewItem());
         adapter = new RecyclerAdapterSecond(entries);
+        recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
         Log.e("FUCK", "resume 0.3");
     }

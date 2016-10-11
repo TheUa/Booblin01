@@ -8,7 +8,6 @@
         android:id="@+id/photoFriend"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:contentdescription="@string/todo"
         android:src="@android:drawable/ic_menu_camera"/>
 
     <TextView
@@ -16,18 +15,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginleft="10dp"
         android:layout_weight="1"
-        android:text="@string/app_name"
-        android:textappearance="?android:attr/textAppearanceMedium"/>
+        android:text="@string/app_name"/>
 
     <ImageView
         android:id="@+id/congratuated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginright="7dp"
-        android:contentdescription="@string/todo"
         android:src="@android:drawable/checkbox_on_background"
         android:visibility="gone"/>
 
