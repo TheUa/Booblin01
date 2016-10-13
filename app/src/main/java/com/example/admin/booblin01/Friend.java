@@ -21,24 +21,31 @@ public class Friend {
     public ArrayList<FriendMenu> getMenu() {
         return menu;
     }
+
     public void setMenu(ArrayList<FriendMenu> menus) {
         this.menu = menus;
     }
+
     public boolean isCongratulated() {
         return congratulated;
     }
+
     public void setCongratulated(boolean congratulated) {
         this.congratulated = congratulated;
     }
+
     public Bitmap getBmp() {
         return bmp;
     }
+
     public void setBmp(Bitmap bmp) {
-        this.bmp=bmp;
+        this.bmp = bmp;
     }
+
     public String getText() {
         return text;
     }
+
     public void setText(String text) {
         this.text = text;
     }

@@ -40,7 +40,6 @@ public class RecyclerAdapterSecond extends RecyclerView.Adapter<RecyclerAdapterS
     }
 
 
-
     // Конструктор
 
     public RecyclerAdapterSecond(List<NewsItem> newsItems) {
@@ -50,7 +49,7 @@ public class RecyclerAdapterSecond extends RecyclerView.Adapter<RecyclerAdapterS
     // Создает новые views (вызывается layout manager-ом)
     @Override
     public RecyclerAdapterSecond.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                         int viewType) {
+                                                               int viewType) {
         // create a new view
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recyclerview_drink_item, parent, false);

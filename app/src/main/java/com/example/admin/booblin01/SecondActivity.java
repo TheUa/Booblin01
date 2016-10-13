@@ -251,7 +251,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
 
                 Object object = setArchiveDB.get(position);
 
-                if (position == 0){
+                if (position == 0) {
                     return;
                 }
                 final NewsItem newsItems = (NewsItem) object;

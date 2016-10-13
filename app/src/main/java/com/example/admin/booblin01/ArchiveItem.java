@@ -14,6 +14,7 @@ public class ArchiveItem {
         this.archiveDate = string;
         this.archiveSumm = summ;
     }
+
     @Override
     public String toString() {
         return this.archiveDate;
@@ -26,6 +27,7 @@ public class ArchiveItem {
         this.archiveDate = string;
         this.archiveSumm = summ;
     }
+
     public ArchiveItem() {
     }
 

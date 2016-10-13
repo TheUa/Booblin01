@@ -120,12 +120,13 @@ public class SumFragment extends Fragment {
         return results;
     }
 
-    public void reselect(){
+    public void reselect() {
         entries.clear();
         entries.addAll(getNewItem());
         adapter = new RecyclerAdapterSecond(entries);
         adapter.notifyDataSetChanged();
     }
+
     @Override
     public void onResume() {
         super.onResume();

@@ -3,6 +3,7 @@ package com.example.admin.booblin01;
 /**
  * Created by Admin on 02.08.2016.
  */
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +30,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     }
 
     private List<NewsItem> newsItems = new ArrayList<>();
-
 
 
     // Конструктор

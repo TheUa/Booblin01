@@ -3,6 +3,7 @@ package com.example.admin.booblin01;
 /**
  * Created by Admin on 01.02.2016.
  */
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -107,8 +108,6 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
             + " text not null);";
 
 
-
-
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.mContext = context;
@@ -183,9 +182,9 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
     public ArchiveItem getArchiveItem(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursor = db.query(DATABASE_JAMESON, new String[] { COLUMN_ID,
+        Cursor cursor = db.query(DATABASE_JAMESON, new String[]{COLUMN_ID,
                         COLUMN_DATE, COLUMN_SUMM}, COLUMN_ID + "=?",
-                new String[] { String.valueOf(id) }, null, null, null, null);
+                new String[]{String.valueOf(id)}, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
 
@@ -245,18 +244,18 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
 
         // обновляем строку
         return db.update(DATABASE_JAMESON, values, COLUMN_ID + " = ?",
-                new String[] { String.valueOf(archiveItem.getArchiveId()) });
+                new String[]{String.valueOf(archiveItem.getArchiveId())});
     }
 
     // Удалить контакт
     public void deleteNewsItem(NewsItem newsItem, String string) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(string, COLUMN_ID + " = ?",
-                new String[] { String.valueOf(newsItem.getSecond_id()) });
+                new String[]{String.valueOf(newsItem.getSecond_id())});
         db.close();
     }
 
-    public int getSum (NewsItem newsItem, String string) {
+    public int getSum(NewsItem newsItem, String string) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cur = db.rawQuery("SELECT SUM(archive_boohlo) FROM " + string, null);
         cur.moveToFirst();

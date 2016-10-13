@@ -40,7 +40,6 @@ public class RecyclerAdapterPlus extends RecyclerView.Adapter<RecyclerAdapterPlu
     }
 
 
-
     // Конструктор
 
     public RecyclerAdapterPlus(List<NewsItem> newsItems) {
@@ -50,7 +49,7 @@ public class RecyclerAdapterPlus extends RecyclerView.Adapter<RecyclerAdapterPlu
     // Создает новые views (вызывается layout manager-ом)
     @Override
     public RecyclerAdapterPlus.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                               int viewType) {
+                                                             int viewType) {
         // create a new view
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recyclerview_plus, parent, false);
