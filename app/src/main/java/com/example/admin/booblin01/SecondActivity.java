@@ -251,6 +251,9 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
 
                 Object object = setArchiveDB.get(position);
 
+                if (position == 0){
+                    return;
+                }
                 final NewsItem newsItems = (NewsItem) object;
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(SecondActivity.this);
@@ -401,11 +404,9 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     String formattedDate = df.format(c.getTime());
                     databaseHelper.addNewsItem(new NewsItem(formattedDate, Integer.parseInt(point[id].toString())), string);
 
-
-                    onResume();
-//                intent = getIntent();
-//                finish();
-//                startActivity(intent);
+                    intent = getIntent();
+                    finish();
+                    startActivity(intent);
                 }
             }
         });
@@ -430,15 +431,15 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         Log.e("FUCK", "=+-" + data.toString());
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.e("FUCK", "RESUME");
-        entries.clear();
-        entries.addAll(addRecyclerList());
-        adapter = new RecyclerAdapterSecond(entries);
-        recyclerView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
-
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        Log.e("FUCK", "RESUME");
+//        entries.clear();
+//        entries.addAll(addRecyclerList());
+//        adapter = new RecyclerAdapterSecond(entries);
+//        recyclerView.setAdapter(adapter);
+//        adapter.notifyDataSetChanged();
+//
+//    }
 }

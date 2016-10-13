@@ -1,7 +1,0 @@
-#Tue Oct 11 19:44:53 EEST 2016
-base.0=C\:\\WorkFile\\Booblin01\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_047d2d2794ea94e28ed8b90183396bbd2f93aace
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\WorkFile\\Booblin01\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_18542d883fbf1913d01e6616ca6c6864c0db9b2c\\classes.dex
-base.1=C\:\\WorkFile\\Booblin01\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_18542d883fbf1913d01e6616ca6c6864c0db9b2c
-file.0=C\:\\WorkFile\\Booblin01\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_047d2d2794ea94e28ed8b90183396bbd2f93aace\\classes.dex
