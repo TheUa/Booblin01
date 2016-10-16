@@ -97,6 +97,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_JAMESON);
+                        return;
                     }
                 });
 
@@ -109,6 +110,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_JAMESON12);
+                        return;
                     }
                 });
             }
@@ -119,6 +121,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_BUSHMILLS);
+                        return;
                     }
                 });
             }
@@ -129,6 +132,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_BUSHMILLS10);
+                        return;
                     }
                 });
             }
@@ -139,6 +143,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_BUSHMILLS_BLACK);
+                        return;
                     }
                 });
             }
@@ -149,6 +154,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_RED_LABEL);
+                        return;
                     }
                 });
             }
@@ -159,6 +165,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_BLACK_LABEL);
+                        return;
                     }
                 });
             }
@@ -169,6 +176,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_GOLD_LABEL);
+                        return;
                     }
                 });
             }
@@ -179,6 +187,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_BELLS);
+                        return;
                     }
                 });
             }
@@ -189,6 +198,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_DJACK_DANIELS);
+                        return;
                     }
                 });
             }
@@ -199,6 +209,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_DJACK_SINGLE);
+                        return;
                     }
                 });
             }
@@ -209,6 +220,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_SINGLETON);
+                        return;
                     }
                 });
             }
@@ -219,6 +231,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     @Override
                     public void onClick(View v) {
                         customAlert(databaseHelper.DATABASE_CHIWAS_REGAL);
+                        return;
                     }
                 });
             }

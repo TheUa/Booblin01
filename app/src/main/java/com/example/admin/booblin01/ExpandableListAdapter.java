@@ -1,121 +1,106 @@
 package com.example.admin.booblin01;
 
+/**
+ * Created by Admin on 13.10.2016.
+ */
+
+import java.util.ArrayList;
+import java.util.List;
+
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
-
-import java.util.ArrayList;
-
-/**
- * Created by Admin on 06.10.2016.
- */
 
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
-    private ArrayList<Friend> friends;
-    private LayoutInflater inflater;
+    private Context context;
+    //Названия заголовков
+    private ArrayList<ExpItem> listDataHeader;
+    //Данные для элементов подпунктов:
+//    private ArrayList<NewsItem> listDataChild;
 
-    // каждый друг внутри себя содержит свое меню (доп. информацию).
-    public ExpandableListAdapter(Context context, ArrayList<Friend> list) {
-        inflater = LayoutInflater.from(context);
-        friends = list;
+    public ExpandableListAdapter(Context context, ArrayList<ExpItem> listDataHeader) {
+        this.context = context;
+        this.listDataHeader = listDataHeader;
     }
 
     @Override
-    public int getGroupCount() {
-
-        return friends.size();
-    }
-
-    @Override
-    public int getChildrenCount(int groupPosition) {
-
-        return friends.get(groupPosition).getMenu().size();
-    }
-
-    @Override
-    public Object getGroup(int groupPosition) {
-
-        return friends.get(groupPosition);
-    }
-
-    @Override
-    public Object getChild(int groupPosition, int childPosition) {
-
-        return friends.get(groupPosition).getMenu().get(childPosition);
-    }
-
-    @Override
-    public long getGroupId(int groupPosition) {
-
-        return groupPosition;
+    public Object getChild(int groupPosition, int childPosititon) {
+        return listDataHeader.get(groupPosition).getMenu().get(childPosititon);
     }
 
     @Override
     public long getChildId(int groupPosition, int childPosition) {
-
         return childPosition;
     }
 
     @Override
-    public boolean hasStableIds() {
+    public View getChildView(int groupPosition, final int childPosition,
+                             boolean isLastChild, View convertView, ViewGroup parent) {
 
-        return true;
+        NewsItem newsItem = (NewsItem) getChild(groupPosition, childPosition);
+
+        if (convertView == null) {
+            LayoutInflater infalInflater = (LayoutInflater) this.context
+                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = infalInflater.inflate(R.layout.list_item, null);
+        }
+
+        ((TextView) convertView.findViewById(R.id.expListItem)).setText(newsItem.getSecond_id());
+
+        ((TextView) convertView.findViewById(R.id.expListCount)).setText(newsItem.getSecond_data());
+
+        return convertView;
+    }
+
+    @Override
+    public int getChildrenCount(int groupPosition) {
+        return listDataHeader.get(groupPosition).getMenu().size();
+    }
+
+    @Override
+    public Object getGroup(int groupPosition) {
+        return listDataHeader.get(groupPosition);
+    }
+
+    @Override
+    public int getGroupCount() {
+        return listDataHeader.size();
+    }
+
+    @Override
+    public long getGroupId(int groupPosition) {
+        return groupPosition;
     }
 
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded,
                              View convertView, ViewGroup parent) {
-        if (convertView == null) {
-            convertView = inflater.inflate(R.layout.item_friend, null);
-        }
-        // получили группу (друга)
-        Friend fr = friends.get(groupPosition);
-        ((TextView) convertView.findViewById(R.id.f_s_names)).setText(fr
-                .getText());
 
-        // ((ImageView)
-        // convertView.findViewById(R.id.photoFriend)).setImageBitmap(fr.getBmp());
-        ((ImageView) convertView.findViewById(R.id.congratuated))
-                .setVisibility((fr.isCongratulated() ? View.VISIBLE : View.GONE));
+        ExpItem expItem = listDataHeader.get(groupPosition);
+
+        if (convertView == null) {
+            LayoutInflater infalInflater = (LayoutInflater) this.context
+                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = infalInflater.inflate(R.layout.list_group, null);
+        }
+
+        ((TextView) convertView.findViewById(R.id.expListHeader)).setText(expItem.getExpHead());
+
         return convertView;
     }
 
     @Override
-    public View getChildView(int groupPosition, int childPosition,
-                             boolean isLastChild, View convertView, ViewGroup parent) {
-        FriendMenu menu = (FriendMenu) getChild(groupPosition, childPosition);
-        convertView = inflater
-                .inflate(R.layout.item_friend_menu, parent, false);
-
-        ((TextView) convertView.findViewById(R.id.m_Nick)).setText(menu
-                .getNick());
-
-        switch (menu.getSex()) {
-            case 1:
-                ((TextView) convertView.findViewById(R.id.m_Sex))
-                        .setText("-");
-                break;
-            case 0:
-                ((TextView) convertView.findViewById(R.id.m_Sex))
-                        .setText("+");
-                break;
-        }
-        ((TextView) convertView.findViewById(R.id.m_Bdate)).setText(menu
-                .getBdate());
-        ((TextView) convertView.findViewById(R.id.m_Template)).setText(menu
-                .getTemplate_name());
-        return convertView;
+    public boolean hasStableIds() {
+        return false;
     }
 
     @Override
     public boolean isChildSelectable(int groupPosition, int childPosition) {
-
-        return false;
+        return true;
     }
-
 }

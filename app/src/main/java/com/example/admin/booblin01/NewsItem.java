@@ -1,5 +1,7 @@
 package com.example.admin.booblin01;
 
+import java.util.ArrayList;
+
 /**
  * Created by Admin on 03.08.2016.
  */
@@ -9,6 +11,7 @@ public class NewsItem {
     private String second_id;
     private String second_data;
 
+
     public NewsItem() {
     }
 
@@ -16,7 +19,6 @@ public class NewsItem {
         this.second_headline = s;
         this.second_data = formattedDate;
     }
-
 
     public String getHeadline() {
         return headline;

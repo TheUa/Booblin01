@@ -40,6 +40,10 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_layout_tab_text.xml"
     },
     {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_widget_switch_compat.xml",
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\24.2.1\\res\\layout\\preference_widget_switch_compat.xml"
     },
@@ -78,6 +82,10 @@
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_group.xml",
+        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\layout\\list_group.xml"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recyclerview_plus.xml",
@@ -120,10 +128,6 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\cn.aigestudio.wheelpicker\\WheelPicker\\1.1.1\\res\\layout\\view_wheel_date_picker.xml"
     },
     {
-        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_friend_menu.xml",
-        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\layout\\item_friend_menu.xml"
-    },
-    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
@@ -134,6 +138,10 @@
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\expandable_fragment.xml",
+        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\layout\\expandable_fragment.xml"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
@@ -158,10 +166,6 @@
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_menu_item_action_area.xml"
-    },
-    {
-        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_friend.xml",
-        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\layout\\item_friend.xml"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
