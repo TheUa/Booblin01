@@ -22,6 +22,10 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.admin.booblin01.SecondActivity" />
+        <activity
+            android:name="com.example.admin.booblin01.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

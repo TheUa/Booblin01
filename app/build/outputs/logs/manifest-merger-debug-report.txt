@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:2:1-21:12
 		INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml
 		INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:5:5-19:19
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:5:5-23:19
 MERGED from [com.android.support:design:24.2.1] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:24.2.1] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
@@ -55,6 +55,14 @@ activity#com.example.admin.booblin01.SecondActivity
 ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:18:9-52
 	android:name
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:18:19-49
+activity#com.example.admin.booblin01.ScrollingActivity
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:19:9-22:56
+	android:label
+		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:21:13-61
+	android:theme
+		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:22:13-44
+	android:name
+		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:20:13-46
 uses-sdk
 INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:24.2.1] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:20:5-43

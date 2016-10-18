@@ -204,6 +204,10 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_scrolling.xml",
+        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\layout\\content_scrolling.xml"
+    },
+    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
@@ -230,6 +234,10 @@
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_scrolling.xml",
+        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\layout\\activity_scrolling.xml"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recyclerview_drink_item.xml",

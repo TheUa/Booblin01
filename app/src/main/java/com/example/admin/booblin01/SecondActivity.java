@@ -61,12 +61,12 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         final CollapsingToolbarLayout collapsingToolbarLayout =
                 (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
         collapsingToolbarLayout.setTitle(" ");
-        collapsingToolbarLayout.setCollapsedTitleTextColor(Color.WHITE);
+//        collapsingToolbarLayout.setCollapsedTitleTextColor(Color.WHITE);
         AppBarLayout appBarLayout = (AppBarLayout) findViewById(R.id.app_bar);
+
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             boolean isShow = false;
             int scrollRange = -1;
-
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
                 if (scrollRange == -1) {
@@ -74,7 +74,9 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                 }
                 if (scrollRange + verticalOffset == 0) {
                     if (extras != null) {
+                        collapsingToolbarLayout.setBackgroundColor(Color.TRANSPARENT);
                         collapsingToolbarLayout.setTitle(test);
+
                     }
 
                     isShow = true;
@@ -400,8 +402,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         input.setData(data);
         input.setCurved(true);
         input.setIndicator(true);
-        input.setIndicatorColor(R.color.datapickerGrayLines);
-        input.setSelectedItemTextColor(R.color.datapickerBlackLines);
+        input.setIndicatorColor(R.color.colorForHelp);
+        input.setSelectedItemTextColor(R.color.colorForHelp);
         input.setAtmospheric(true);
         input.setVisibleItemCount(6);
         input.setSelectedItemPosition(20);
