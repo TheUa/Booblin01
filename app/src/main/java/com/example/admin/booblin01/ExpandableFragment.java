@@ -58,6 +58,11 @@ public class ExpandableFragment extends Fragment {
         ArrayList<ExpItem> expList = new ArrayList<>();
         ArrayList<NewsItem> newsItemsExp = new ArrayList<>();
         String[] drink = getResources().getStringArray(R.array.visky);
+        String[] vodka = getResources().getStringArray(R.array.vodka);
+        String[] beer = getResources().getStringArray(R.array.beer);
+        String[] biter = getResources().getStringArray(R.array.biter);
+        String[] shot = getResources().getStringArray(R.array.shot);
+        String[] cola = getResources().getStringArray(R.array.cola);
 
         ExpItem expItem = new ExpItem();
         NewsItem newsItem = new NewsItem();
@@ -67,12 +72,57 @@ public class ExpandableFragment extends Fragment {
 
         newsItem = new NewsItem();
         newsItem.setSecond_id(drink[1]);
-        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_JAMESON12))));
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_BUSHMILLS))));
         newsItemsExp.add(newsItem);
 
         newsItem = new NewsItem();
         newsItem.setSecond_id(drink[2]);
-        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_BUSHMILLS))));
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_BUSHMILLS10))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(drink[3]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_BUSHMILLS_BLACK))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(drink[4]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_RED_LABEL))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(drink[5]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_BLACK_LABEL))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(drink[6]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_GOLD_LABEL))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(drink[7]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_BELLS))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(drink[8]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_DJACK_DANIELS))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(drink[9]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_DJACK_SINGLE))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(drink[10]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_SINGLETON))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(drink[11]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_CHIWAS_REGAL))));
         newsItemsExp.add(newsItem);
 
         expItem.setMenu(newsItemsExp);
@@ -84,22 +134,32 @@ public class ExpandableFragment extends Fragment {
         newsItemsExp = new ArrayList<NewsItem>();
         expItem = new ExpItem();
         newsItem = new NewsItem();
-        newsItem.setSecond_id("ddd");
-        newsItem.setSecond_data("44");
+        newsItem.setSecond_id(vodka[0]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_NEMIROFF))));
         newsItemsExp.add(newsItem);
 
         newsItem = new NewsItem();
-        newsItem.setSecond_id("eee");
-        newsItem.setSecond_data("555");
+        newsItem.setSecond_id(vodka[1]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_NEMIROFF_LEXX))));
         newsItemsExp.add(newsItem);
 
         newsItem = new NewsItem();
-        newsItem.setSecond_id("fff");
-        newsItem.setSecond_data("4343");
+        newsItem.setSecond_id(vodka[2]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_NEMIROFF_PAPER))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(vodka[3]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_GREY_GOOSE))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(vodka[4]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_SMIRNOFF))));
         newsItemsExp.add(newsItem);
 
         expItem.setMenu(newsItemsExp);
-        expItem.setExpHead("Second");
+        expItem.setExpHead(getString(R.string.vodka));
         expList.add(expItem);
 
 

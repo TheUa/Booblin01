@@ -58,11 +58,6 @@ public class SumFragment extends Fragment {
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data("Jameson 12");
-        newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_JAMESON12))));
-        results.add(newsData);
-
-        newsData = new NewsItem();
         newsData.setSecond_data("Bushmills");
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_BUSHMILLS))));
         results.add(newsData);

@@ -7,6 +7,13 @@
     <string name="exit_toast">Для выхода из программы нажмите еще раз</string>
     <string name="all">Итого: </string>
     <string name="viski">Виски</string>
+    <string name="vodka">Водка</string>
+    <string name="beer">Пиво</string>
+    <string name="biter">Настойки, Ликеры, Мартини</string>
+    <string name="hard">Ром, Джин, Текила</string>
+    <string name="drinks">Вода, Кола, Соки</string>
+
+
 
 
     <string-array name="boohlo">
@@ -20,7 +27,6 @@
 
     <string-array name="visky">
         <item>Jameson</item>
-        <item>Jameson 12</item>
         <item>Bushmills</item>
         <item>Bushmills 10</item>
         <item>Bushmills Black Bush</item>

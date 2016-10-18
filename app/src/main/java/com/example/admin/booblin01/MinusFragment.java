@@ -68,11 +68,11 @@ public class MinusFragment extends Fragment {
                                         startActivity(intent);
                                         break;
                                     case 1:
-                                        intent = new Intent(getActivity(), ScrollingActivity.class);
-                                        startActivity(intent);
-//                                        intent = new Intent(getActivity(), SecondActivity.class);
-//                                        intent.putExtra(KEY, visky[1]);
+//                                        intent = new Intent(getActivity(), ScrollingActivity.class);
 //                                        startActivity(intent);
+                                        intent = new Intent(getActivity(), SecondActivity.class);
+                                        intent.putExtra(KEY, visky[1]);
+                                        startActivity(intent);
                                         break;
                                     case 2:
                                         intent = new Intent(getActivity(), SecondActivity.class);
@@ -122,11 +122,6 @@ public class MinusFragment extends Fragment {
                                     case 11:
                                         intent = new Intent(getActivity(), SecondActivity.class);
                                         intent.putExtra(KEY, visky[11]);
-                                        startActivity(intent);
-                                        break;
-                                    case 12:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[12]);
                                         startActivity(intent);
                                         break;
                                 }

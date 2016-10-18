@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.aigestudio.wheelpicker.WheelPicker;
@@ -42,12 +43,15 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
     private Bundle extras;
     private String[] visky;
     private ArrayList entries = new ArrayList<>();
+    private ImageView dropImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.second_activity);
+
+        dropImage = (ImageView) findViewById(R.id.dropImage);
 
         final Bundle extras = getIntent().getExtras();
         test = extras.getString(KEY);
@@ -74,9 +78,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                 }
                 if (scrollRange + verticalOffset == 0) {
                     if (extras != null) {
-                        collapsingToolbarLayout.setBackgroundColor(Color.TRANSPARENT);
                         collapsingToolbarLayout.setTitle(test);
-
                     }
 
                     isShow = true;
@@ -93,7 +95,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
 
         if (extras != null) {
             if (test.equals(visky[0])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.jameson));
+                dropImage.setBackgroundResource(R.drawable.jameson);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_JAMESON);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -106,18 +108,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
 
             }
             if (test.equals(visky[1])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.jameson));
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_JAMESON12);
-                fabClick.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        customAlert(databaseHelper.DATABASE_JAMESON12);
-                        return;
-                    }
-                });
-            }
-            if (test.equals(visky[2])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.bushmills));
+                dropImage.setBackgroundResource(R.drawable.bushmills);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -127,8 +118,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
-            if (test.equals(visky[3])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.bushmills10));
+            if (test.equals(visky[2])) {
+                dropImage.setBackgroundResource(R.drawable.bushmills10);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS10);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -138,8 +129,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
-            if (test.equals(visky[4])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.bushmillsblack));
+            if (test.equals(visky[3])) {
+                dropImage.setBackgroundResource(R.drawable.bushmillsblack);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS_BLACK);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -149,8 +140,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
-            if (test.equals(visky[5])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.red));
+            if (test.equals(visky[4])) {
+                dropImage.setBackgroundResource(R.drawable.red);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_RED_LABEL);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -160,8 +151,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
-            if (test.equals(visky[6])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.black));
+            if (test.equals(visky[5])) {
+                dropImage.setBackgroundResource(R.drawable.black);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BLACK_LABEL);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -171,8 +162,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
-            if (test.equals(visky[7])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.gold));
+            if (test.equals(visky[6])) {
+                dropImage.setBackgroundResource(R.drawable.gold);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_GOLD_LABEL);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -182,8 +173,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
-            if (test.equals(visky[8])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.bells));
+            if (test.equals(visky[7])) {
+                dropImage.setBackgroundResource(R.drawable.bells);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BELLS);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -193,8 +184,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
-            if (test.equals(visky[9])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.jack));
+            if (test.equals(visky[8])) {
+                dropImage.setBackgroundResource(R.drawable.jack);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_DJACK_DANIELS);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -204,8 +195,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
-            if (test.equals(visky[10])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.single));
+            if (test.equals(visky[9])) {
+                dropImage.setBackgroundResource(R.drawable.single);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_DJACK_SINGLE);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -215,8 +206,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
-            if (test.equals(visky[11])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.singleton));
+            if (test.equals(visky[10])) {
+                dropImage.setBackgroundResource(R.drawable.singleton);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_SINGLETON);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -226,8 +217,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
-            if (test.equals(visky[12])) {
-                collapsingToolbarLayout.setBackground(getResources().getDrawable(R.drawable.chivas));
+            if (test.equals(visky[11])) {
+                dropImage.setBackgroundResource(R.drawable.chivas);
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_CHIWAS_REGAL);
                 fabClick.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -285,28 +276,26 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                                             if (test.equals(visky[0])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_JAMESON);
                                             } else if (test.equals(visky[1])) {
-                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_JAMESON12);
-                                            } else if (test.equals(visky[2])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BUSHMILLS);
-                                            } else if (test.equals(visky[3])) {
+                                            } else if (test.equals(visky[2])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BUSHMILLS10);
-                                            } else if (test.equals(visky[4])) {
+                                            } else if (test.equals(visky[3])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BUSHMILLS_BLACK);
-                                            } else if (test.equals(visky[5])) {
+                                            } else if (test.equals(visky[4])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_RED_LABEL);
-                                            } else if (test.equals(visky[6])) {
+                                            } else if (test.equals(visky[5])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BLACK_LABEL);
-                                            } else if (test.equals(visky[7])) {
+                                            } else if (test.equals(visky[6])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_GOLD_LABEL);
-                                            } else if (test.equals(visky[8])) {
+                                            } else if (test.equals(visky[7])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BELLS);
-                                            } else if (test.equals(visky[9])) {
+                                            } else if (test.equals(visky[8])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_DJACK_DANIELS);
-                                            } else if (test.equals(visky[10])) {
+                                            } else if (test.equals(visky[9])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_DJACK_SINGLE);
-                                            } else if (test.equals(visky[11])) {
+                                            } else if (test.equals(visky[10])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_SINGLETON);
-                                            } else if (test.equals(visky[12])) {
+                                            } else if (test.equals(visky[11])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_CHIWAS_REGAL);
                                             }
                                         }
@@ -348,39 +337,36 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_JAMESON);
             }
             if (test.equals(visky[1])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_JAMESON12);
-            }
-            if (test.equals(visky[2])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS);
             }
-            if (test.equals(visky[3])) {
+            if (test.equals(visky[2])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS10);
             }
-            if (test.equals(visky[4])) {
+            if (test.equals(visky[3])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS_BLACK);
             }
-            if (test.equals(visky[5])) {
+            if (test.equals(visky[4])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_RED_LABEL);
             }
-            if (test.equals(visky[6])) {
+            if (test.equals(visky[5])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BLACK_LABEL);
             }
-            if (test.equals(visky[7])) {
+            if (test.equals(visky[6])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_GOLD_LABEL);
             }
-            if (test.equals(visky[8])) {
+            if (test.equals(visky[7])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BELLS);
             }
-            if (test.equals(visky[9])) {
+            if (test.equals(visky[8])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_DJACK_DANIELS);
             }
-            if (test.equals(visky[10])) {
+            if (test.equals(visky[9])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_DJACK_SINGLE);
             }
-            if (test.equals(visky[11])) {
+            if (test.equals(visky[10])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_SINGLETON);
             }
-            if (test.equals(visky[12])) {
+            if (test.equals(visky[11])) {
                 setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_CHIWAS_REGAL);
             }
         }

@@ -8,6 +8,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 
 public class ScrollingActivity extends AppCompatActivity {
 
@@ -22,6 +23,7 @@ public class ScrollingActivity extends AppCompatActivity {
                 (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout1);
 
 
+        ImageView imageView = (ImageView) findViewById(R.id.backdrop);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,10 +33,12 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         });
 
-//        collapsingToolbarLayout.setBackgroundResource();
+        imageView.setBackgroundResource(R.drawable.bushmills10);
 
-        collapsingToolbarLayout.setContentScrimResource(R.drawable.jack);
-        collapsingToolbarLayout.setContentScrim(getResources().getDrawable(R.drawable.jameson));
-        collapsingToolbarLayout.setBackgroundResource(R.drawable.bushmills10);
+//        collapsingToolbarLayout.setBackgroundResource();
+//
+//        collapsingToolbarLayout.setContentScrimResource(R.drawable.jack);
+//        collapsingToolbarLayout.setContentScrim(getResources().getDrawable(R.drawable.jameson));
+//        collapsingToolbarLayout.setBackgroundResource(R.drawable.bushmills10);
     }
 }
