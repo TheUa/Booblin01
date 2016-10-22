@@ -11,6 +11,8 @@ public class ExpItem {
 
     private String expHead;
     private ArrayList<NewsItem> menu;
+    private String second_id;
+    private String second_data;
 
     public ArrayList<NewsItem> getMenu() {
         return menu;
@@ -25,5 +27,21 @@ public class ExpItem {
 
     public void setExpHead(String string){
         this.expHead = string;
+    }
+
+    public String getSecond_id() {
+        return second_id;
+    }
+
+    public void setSecond_id(String second_id) {
+        this.second_id = second_id;
+    }
+
+    public String getSecond_data() {
+        return second_data;
+    }
+
+    public void setSecond_data(String second_data) {
+        this.second_data = second_data;
     }
 }

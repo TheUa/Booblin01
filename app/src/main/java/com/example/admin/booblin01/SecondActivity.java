@@ -42,6 +42,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
     private Intent intent;
     private Bundle extras;
     private String[] visky;
+    private String[] vodka;
     private ArrayList entries = new ArrayList<>();
     private ImageView dropImage;
 
@@ -57,7 +58,8 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         test = extras.getString(KEY);
 
         databaseHelper = new DatabaseHelper(this);
-        final String[] visky = getResources().getStringArray(R.array.visky);
+        visky = getResources().getStringArray(R.array.visky);
+        vodka = getResources().getStringArray(R.array.vodka);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -104,8 +106,6 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                         return;
                     }
                 });
-
-
             }
             if (test.equals(visky[1])) {
                 dropImage.setBackgroundResource(R.drawable.bushmills);
@@ -228,6 +228,61 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
+            if (test.equals(vodka[0])) {
+                dropImage.setBackgroundResource(R.drawable.nemiroff);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_NEMIROFF);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_NEMIROFF);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(vodka[1])) {
+                dropImage.setBackgroundResource(R.drawable.lexx);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_NEMIROFF_LEXX);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_NEMIROFF_LEXX);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(vodka[2])) {
+                dropImage.setBackgroundResource(R.drawable.nemoroff_hunny);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_NEMIROFF_PAPER);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_NEMIROFF_PAPER);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(vodka[3])) {
+                dropImage.setBackgroundResource(R.drawable.grey_goose);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_GREY_GOOSE);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_GREY_GOOSE);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(vodka[4])) {
+                dropImage.setBackgroundResource(R.drawable.smirnoff);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_SMIRNOFF);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_SMIRNOFF);
+                        return;
+                    }
+                });
+            }
         }
         entries = setArchiveDB;
         adapter = new RecyclerAdapterSecond(entries);
@@ -297,6 +352,16 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_SINGLETON);
                                             } else if (test.equals(visky[11])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_CHIWAS_REGAL);
+                                            }else if (test.equals(vodka[0])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_NEMIROFF);
+                                            }else if (test.equals(vodka[1])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_NEMIROFF_LEXX);
+                                            }else if (test.equals(vodka[2])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_NEMIROFF_PAPER);
+                                            }else if (test.equals(vodka[3])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_GREY_GOOSE);
+                                            }else if (test.equals(vodka[4])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_SMIRNOFF);
                                             }
                                         }
 

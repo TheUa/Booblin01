@@ -52,24 +52,24 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
 
     public static final String DATABASE_JAGERMEISTER = "Jagermeister";
     public static final String DATABASE_BECHEROVKA = "Becherovka";
-    public static final String DATABASE_MARTINI_BIANCO = "Martini Bianco";
-    public static final String DATABASE_MARTINI_ROSSO = "Martini Rosso";
-    public static final String DATABASE_MARTINI_EXTRA_DRY = "Martini Extr Dry";
+    public static final String DATABASE_MARTINI_BIANCO = "MartiniBianco";
+    public static final String DATABASE_MARTINI_ROSSO = "MartiniRosso";
+    public static final String DATABASE_MARTINI_EXTRA_DRY = "MartiniExtrDry";
     public static final String DATABASE_SAMBUKA = "Sambuka";
     public static final String DATABASE_PISANG = "Pisang";
-    public static final String DATABASE_TRIPLE_SEC = "Triple Sec";
-    public static final String DATABASE_PEAC_TREE = "Peach Tree";
+    public static final String DATABASE_TRIPLE_SEC = "TripleSec";
+    public static final String DATABASE_PEAC_TREE = "PeachTree";
     public static final String DATABASE_ABSENT = "Absent";
     public static final String DATABASE_BAILEYS = "Baileys";
     public static final String DATABASE_KHALUA = "Khalua";
 
     public static final String DATABASE_GORDONS = "Gordons";
-    public static final String DATABASE_JOSE_CUERVO_SILVER = "Jose Cuervo Silver";
-    public static final String DATABASE_JOSE_CUERVO_GOLD = "Jose Cuervo Gold";
-    public static final String DATABASE_MORGAN_GOLD = "Cap.Morg. Gold";
-    public static final String DATABASE_MORGAN_WHITE = "Cap.Morg. White";
-    public static final String DATABASE_MORGAN_BLACK = "Cap.Morg. Jamaica Black";
-    public static final String DATABASE_MORGAN_SPICED = "Cap.Morg. Spiced Black";
+    public static final String DATABASE_JOSE_CUERVO_SILVER = "JoseCuervoSilver";
+    public static final String DATABASE_JOSE_CUERVO_GOLD = "JoseCuervoGold";
+    public static final String DATABASE_MORGAN_GOLD = "MorgGold";
+    public static final String DATABASE_MORGAN_WHITE = "MorgWhite";
+    public static final String DATABASE_MORGAN_BLACK = "MorgJamaicaBlack";
+    public static final String DATABASE_MORGAN_SPICED = "MorgSpicedBlack";
 
     public static final String DATABASE_COLA = "cola";
     public static final String DATABASE_SPRITE = "sprite";

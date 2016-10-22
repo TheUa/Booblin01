@@ -1,5 +1,6 @@
 package com.example.admin.booblin01;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
  * Created by Admin on 13.10.2016.
  */
 
-public class ExpandableFragment extends Fragment {
+public class ExpandableFragment extends android.app.Fragment {
 
     private ExpandableListView expandableListView;
     private DisplayMetrics metrics;
@@ -24,6 +25,14 @@ public class ExpandableFragment extends Fragment {
     private DatabaseHelper databaseHelper;
     private ExpandableListAdapter adapter;
     private ArrayList entries = new ArrayList<>();
+    private String KEY = "KEY";
+    private Object object;
+    private String[] drink;
+    private String[] vodka;
+    private String[] beer;
+    private String[] biter;
+    private String[] shot;
+    private String[] cola;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -31,6 +40,13 @@ public class ExpandableFragment extends Fragment {
 
         Log.e("FUCK", "onCreate");
         Log.d("FUCK", "onCreate");
+
+        drink = getResources().getStringArray(R.array.visky);
+        vodka = getResources().getStringArray(R.array.vodka);
+        beer = getResources().getStringArray(R.array.beer);
+        biter = getResources().getStringArray(R.array.biter);
+        shot = getResources().getStringArray(R.array.shot);
+        cola = getResources().getStringArray(R.array.cola);
 
 
         metrics = new DisplayMetrics();
@@ -46,7 +62,22 @@ public class ExpandableFragment extends Fragment {
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                Toast.makeText(getActivity(), "gr " + groupPosition + " chld " + childPosition, Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity(), "gr " + groupPosition + " chld " + childPosition, Toast.LENGTH_LONG).show();
+
+                switch (groupPosition) {
+                    case 0:
+                        Intent intent = new Intent(getActivity(), SecondActivity.class);
+                        intent.putExtra(KEY, drink[childPosition]);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent = new Intent(getActivity(), SecondActivity.class);
+                        intent.putExtra(KEY, vodka[childPosition]);
+                        startActivity(intent);
+                        break;
+                }
+
+
                 return false;
             }
         });
@@ -57,12 +88,6 @@ public class ExpandableFragment extends Fragment {
 
         ArrayList<ExpItem> expList = new ArrayList<>();
         ArrayList<NewsItem> newsItemsExp = new ArrayList<>();
-        String[] drink = getResources().getStringArray(R.array.visky);
-        String[] vodka = getResources().getStringArray(R.array.vodka);
-        String[] beer = getResources().getStringArray(R.array.beer);
-        String[] biter = getResources().getStringArray(R.array.biter);
-        String[] shot = getResources().getStringArray(R.array.shot);
-        String[] cola = getResources().getStringArray(R.array.cola);
 
         ExpItem expItem = new ExpItem();
         NewsItem newsItem = new NewsItem();
@@ -130,7 +155,7 @@ public class ExpandableFragment extends Fragment {
         expList.add(expItem);
 
 
-//    =====2=====
+//      =====2=====
         newsItemsExp = new ArrayList<NewsItem>();
         expItem = new ExpItem();
         newsItem = new NewsItem();
@@ -162,6 +187,117 @@ public class ExpandableFragment extends Fragment {
         expItem.setExpHead(getString(R.string.vodka));
         expList.add(expItem);
 
+//      =====3=====
+        newsItemsExp = new ArrayList<NewsItem>();
+        expItem = new ExpItem();
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(beer[0]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_GUINNESS))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(beer[1]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_KILKENNY))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(beer[2]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_HARP))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(beer[3]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_HOEGAARDEN))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(beer[4]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_LEFFE_BLONDE))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(beer[5]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_LEFFE_BRUNE))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(beer[6]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_CORONA_EXTRA))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(beer[7]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_WARSCHTAINER))));
+        newsItemsExp.add(newsItem);
+
+        expItem.setMenu(newsItemsExp);
+        expItem.setExpHead(getString(R.string.beer));
+        expList.add(expItem);
+
+        expItem = new ExpItem();
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[0]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_JAGERMEISTER))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[1]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_BECHEROVKA))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[2]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_MARTINI_BIANCO))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[3]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_MARTINI_ROSSO))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[4]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_MARTINI_EXTRA_DRY))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[5]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_SAMBUKA))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[6]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_PISANG))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[7]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_TRIPLE_SEC))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[8]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_PEAC_TREE))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[9]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_ABSENT))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[10]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_BAILEYS))));
+        newsItemsExp.add(newsItem);
+
+        newsItem = new NewsItem();
+        newsItem.setSecond_id(biter[11]);
+        newsItem.setSecond_data((String.valueOf(databaseHelper.getSum(newsItem, databaseHelper.DATABASE_KHALUA))));
+        newsItemsExp.add(newsItem);
+
+        expItem.setMenu(newsItemsExp);
+        expItem.setExpHead(getString(R.string.biter));
+        expList.add(expItem);
 
         return expList;
     }
@@ -177,8 +313,8 @@ public class ExpandableFragment extends Fragment {
     public void onResume() {
         super.onResume();
         Log.d("FUCK", "resume 3");
-        entries.clear();
-        entries.addAll(getExpandableList());
+//        entries.clear();
+//        entries.addAll(getExpandableList());
         adapter = new ExpandableListAdapter(getActivity(), getExpandableList());
         expandableListView.setAdapter(adapter);
         adapter.notifyDataSetChanged();

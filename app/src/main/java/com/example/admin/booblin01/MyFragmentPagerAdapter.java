@@ -27,10 +27,10 @@ public class MyFragmentPagerAdapter extends FragmentStatePagerAdapter {
                 return minusFragment;
 
             case 1:
-                ExpandableFragment expandableFragment = new ExpandableFragment();
-                return expandableFragment;
-//                SumFragment sumFragment = new SumFragment();
-//                return sumFragment;
+//                ExpandableFragment expandableFragment = new ExpandableFragment();
+//                return expandableFragment;
+                SumFragment sumFragment = new SumFragment();
+                return sumFragment;
 
             default:
                 minusFragment = new MinusFragment();

@@ -23,42 +23,8 @@ public class MainActivity extends AppCompatActivity {
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
 
+        getFragmentManager().beginTransaction().replace(R.id.content_frame, new ExpandableFragment()).commit();
 
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
-        viewPager.setAdapter(new MyFragmentPagerAdapter(getSupportFragmentManager()));
-
-        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-        tabLayout.setupWithViewPager(viewPager);
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                switch (tab.getPosition()) {
-                    case 0:
-                        viewPager.setCurrentItem(0);
-                        mToolbar.setTitle("Позиции");
-                        break;
-                    case 1:
-                        viewPager.setCurrentItem(2);
-                        mToolbar.setTitle("Факт");
-                        break;
-
-                    default:
-                        viewPager.setCurrentItem(tab.getPosition());
-                        mToolbar.setTitle("Первое правило :)");
-                        break;
-                }
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
     }
     @Override
     public void onBackPressed() {
