@@ -8,8 +8,8 @@ package com.aigestudio.wheelpicker;
 
 public final class R {
 	public static final class array {
-		public static final int WheelArrayDefault = 0x7f0b0000;
-		public static final int WheelArrayWeek = 0x7f0b0001;
+		public static final int WheelArrayDefault = 0x7f0c0000;
+		public static final int WheelArrayWeek = 0x7f0c0001;
 	}
 	public static final class attr {
 		public static final int wheel_atmospheric = 0x7f010184;
@@ -33,24 +33,24 @@ public final class R {
 		public static final int wheel_visible_item_count = 0x7f01017c;
 	}
 	public static final class dimen {
-		public static final int WheelIndicatorSize = 0x7f07001a;
-		public static final int WheelItemSpace = 0x7f07001b;
-		public static final int WheelItemTextSize = 0x7f07001c;
-		public static final int WheelMargins = 0x7f07001d;
+		public static final int WheelIndicatorSize = 0x7f07001e;
+		public static final int WheelItemSpace = 0x7f07001f;
+		public static final int WheelItemTextSize = 0x7f070020;
+		public static final int WheelMargins = 0x7f070021;
 	}
 	public static final class id {
-		public static final int center = 0x7f0d0023;
-		public static final int left = 0x7f0d0028;
-		public static final int right = 0x7f0d0029;
-		public static final int wheel_date_picker_day = 0x7f0d00a7;
-		public static final int wheel_date_picker_day_tv = 0x7f0d00a8;
-		public static final int wheel_date_picker_month = 0x7f0d00a5;
-		public static final int wheel_date_picker_month_tv = 0x7f0d00a6;
-		public static final int wheel_date_picker_year = 0x7f0d00a3;
-		public static final int wheel_date_picker_year_tv = 0x7f0d00a4;
+		public static final int center = 0x7f0d0025;
+		public static final int left = 0x7f0d002a;
+		public static final int right = 0x7f0d002b;
+		public static final int wheel_date_picker_day = 0x7f0d00b6;
+		public static final int wheel_date_picker_day_tv = 0x7f0d00b7;
+		public static final int wheel_date_picker_month = 0x7f0d00b4;
+		public static final int wheel_date_picker_month_tv = 0x7f0d00b5;
+		public static final int wheel_date_picker_year = 0x7f0d00b2;
+		public static final int wheel_date_picker_year_tv = 0x7f0d00b3;
 	}
 	public static final class layout {
-		public static final int view_wheel_date_picker = 0x7f04004a;
+		public static final int view_wheel_date_picker = 0x7f040052;
 	}
 	public static final class string {
 		public static final int Day = 0x7f060015;

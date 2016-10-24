@@ -29,7 +29,7 @@ public class MyFragmentPagerAdapter extends FragmentStatePagerAdapter {
             case 1:
 //                ExpandableFragment expandableFragment = new ExpandableFragment();
 //                return expandableFragment;
-                SumFragment sumFragment = new SumFragment();
+                ViskiFragment sumFragment = new ViskiFragment();
                 return sumFragment;
 
             default:
