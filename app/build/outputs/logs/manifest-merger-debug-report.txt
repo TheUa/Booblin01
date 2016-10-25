@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml
 		INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:5:5-28:19
 MERGED from [com.android.support:design:25.0.0] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\design\25.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\AndroidManifest.xml:25:5-20
@@ -35,7 +35,7 @@ MERGED from [com.android.support:preference-v7:25.0.0] C:\WorkFile\Booblin01\app
 	android:allowBackup
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:7:9-38
 	android:theme
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:10:9-40
 activity#com.example.admin.booblin01.MainActivity
@@ -57,13 +57,21 @@ ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:18:9-52
 	android:name
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:18:19-49
 activity#com.example.admin.booblin01.ScrollingActivity
-ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:19:9-22:56
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:19:9-22:47
 	android:label
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:21:13-61
 	android:theme
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:22:13-44
 	android:name
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:20:13-46
+activity#com.example.admin.booblin01.Main2Activity
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:23:9-27:20
+	android:label
+		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:25:13-57
+	android:theme
+		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:26:13-44
+	android:name
+		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:24:13-42
 uses-sdk
 INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.0.0] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\design\25.0.0\AndroidManifest.xml:21:5-23:62

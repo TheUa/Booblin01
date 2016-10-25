@@ -1,6 +1,7 @@
 package com.example.admin.booblin01;
 
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,11 +66,15 @@ public class RecyclerAdapterSecond extends RecyclerView.Adapter<RecyclerAdapterS
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
+        NewsItem data = newsItems.get(position);
         holder.secondDrink.setText(Integer.toString(newsItems.get(position).getSecond_headline()));
         holder.secondDate.setText(newsItems.get(position).getSecond_data());
         holder.secondID.setText(newsItems.get(position).getSecond_id());
-//        holder.mTextView.setText(mDataset[position]);
-
+        if(TextUtils.isEmpty(data.getSecond_id())){
+            holder.secondID.setVisibility(View.GONE);
+        }else{
+            holder.secondID.setVisibility(View.VISIBLE);
+        }
     }
 
     // Возвращает размер данных (вызывается layout manager-ом)

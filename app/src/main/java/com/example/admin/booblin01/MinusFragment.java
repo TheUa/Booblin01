@@ -32,7 +32,7 @@ public class MinusFragment extends Fragment {
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.minus_fragment, container, false);
 
-        final String[] visky = getResources().getStringArray(R.array.visky);
+        final String[] viski = getResources().getStringArray(R.array.visky);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.minusRecycler);
 
@@ -45,7 +45,8 @@ public class MinusFragment extends Fragment {
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL); // необязательно
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setItemAnimator(itemAnimator);
-        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView, new RecyclerTouchListener.ClickListener() {
+        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView,
+                new RecyclerTouchListener.ClickListener() {
 
             @Override
             public void onClick(View view, int position){
@@ -64,64 +65,64 @@ public class MinusFragment extends Fragment {
 
                                     case 0:
                                         Intent intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[0]);
+                                        intent.putExtra(KEY, viski[0]);
                                         startActivity(intent);
                                         break;
                                     case 1:
 //                                        intent = new Intent(getActivity(), ScrollingActivity.class);
 //                                        startActivity(intent);
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[1]);
+                                        intent.putExtra(KEY, viski[1]);
                                         startActivity(intent);
                                         break;
                                     case 2:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[2]);
+                                        intent.putExtra(KEY, viski[2]);
                                         startActivity(intent);
                                         break;
                                     case 3:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[3]);
+                                        intent.putExtra(KEY, viski[3]);
                                         startActivity(intent);
                                         break;
                                     case 4:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[4]);
+                                        intent.putExtra(KEY, viski[4]);
                                         startActivity(intent);
                                         break;
                                     case 5:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[5]);
+                                        intent.putExtra(KEY, viski[5]);
                                         startActivity(intent);
                                         break;
                                     case 6:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[6]);
+                                        intent.putExtra(KEY, viski[6]);
                                         startActivity(intent);
                                         break;
                                     case 7:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[7]);
+                                        intent.putExtra(KEY, viski[7]);
                                         startActivity(intent);
                                         break;
                                     case 8:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[8]);
+                                        intent.putExtra(KEY, viski[8]);
                                         startActivity(intent);
                                         break;
                                     case 9:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[9]);
+                                        intent.putExtra(KEY, viski[9]);
                                         startActivity(intent);
                                         break;
                                     case 10:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[10]);
+                                        intent.putExtra(KEY, viski[10]);
                                         startActivity(intent);
                                         break;
                                     case 11:
                                         intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, visky[11]);
+                                        intent.putExtra(KEY, viski[11]);
                                         startActivity(intent);
                                         break;
                                 }

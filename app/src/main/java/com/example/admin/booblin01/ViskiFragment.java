@@ -1,5 +1,6 @@
 package com.example.admin.booblin01;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -7,11 +8,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.StringTokenizer;
 
 /**
  * Created by Admin on 04.08.2016.
@@ -22,10 +24,16 @@ public class ViskiFragment extends Fragment {
     private DatabaseHelper databaseHelper;
     private RecyclerAdapterSecond adapter;
     private ArrayList entries = new ArrayList<>();
+    private String[] viski;
+    private String KEY = "KEY";
+    private TextView id;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.sum_fragment, container, false);
+
+        viski = getResources().getStringArray(R.array.visky);
 
         databaseHelper = new DatabaseHelper(getActivity());
 
@@ -43,72 +51,92 @@ public class ViskiFragment extends Fragment {
         recyclerView.setItemAnimator(itemAnimator);
         adapter.notifyDataSetChanged();
 
+//        id = (TextView) view.findViewById(R.id.id_second);
+//        id.setVisibility(View.GONE);
+
+        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView,
+                new RecyclerTouchListener.ClickListener() {
+
+                    @Override
+                    public void onClick(View view, int position) {
+                        Intent intent = new Intent(getActivity(), SecondActivity.class);
+                        intent.putExtra(KEY, viski[position]);
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onLongClick(View view, int position) {
+
+                    }
+                }
+
+        ));
+
 
         return view;
     }
 
     private ArrayList getNewItem() {
 
-        String[] drink = getResources().getStringArray(R.array.visky);
 
         ArrayList<NewsItem> results = new ArrayList<>();
         NewsItem newsData = new NewsItem();
-        newsData.setSecond_data(drink[0]);
+        newsData.setSecond_data(viski[0]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_JAMESON))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[1]);
+        newsData.setSecond_data(viski[1]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_BUSHMILLS))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[2]);
+        newsData.setSecond_data(viski[2]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_BUSHMILLS10))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[3]);
+        newsData.setSecond_data(viski[3]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_BUSHMILLS_BLACK))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[4]);
+        newsData.setSecond_data(viski[4]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_RED_LABEL))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[5]);
+        newsData.setSecond_data(viski[5]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_BLACK_LABEL))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[6]);
+        newsData.setSecond_data(viski[6]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_GOLD_LABEL))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[7]);
+        newsData.setSecond_data(viski[7]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_BELLS))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[8]);
+        newsData.setSecond_data(viski[8]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_DJACK_DANIELS))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[9]);
+        newsData.setSecond_data(viski[9]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_DJACK_SINGLE))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[10]);
+        newsData.setSecond_data(viski[10]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_SINGLETON))));
         results.add(newsData);
 
         newsData = new NewsItem();
-        newsData.setSecond_data(drink[11]);
+        newsData.setSecond_data(viski[11]);
         newsData.setHeadline((String.valueOf(databaseHelper.getSum(newsData, databaseHelper.DATABASE_CHIWAS_REGAL))));
         results.add(newsData);
 
@@ -123,6 +151,6 @@ public class ViskiFragment extends Fragment {
         adapter = new RecyclerAdapterSecond(entries);
         recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
-        Log.e("FUCK", "resume 0.3");
+        Log.e("FUCK", "resume 0.1");
     }
 }

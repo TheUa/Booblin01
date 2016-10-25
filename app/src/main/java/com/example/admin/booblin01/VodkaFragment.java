@@ -1,5 +1,6 @@
 package com.example.admin.booblin01;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -22,7 +23,8 @@ public class VodkaFragment extends Fragment {
     private DatabaseHelper databaseHelper;
     private RecyclerAdapterSecond adapter;
     private ArrayList entries = new ArrayList<>();
-
+    private String KEY = "KEY";
+    private String[] vodka;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.sum_fragment, container, false);
@@ -30,6 +32,8 @@ public class VodkaFragment extends Fragment {
         databaseHelper = new DatabaseHelper(getActivity());
 
         recyclerView = (RecyclerView) view.findViewById(R.id.sumRecycler);
+
+        vodka = getResources().getStringArray(R.array.vodka);
 
         entries = getNewItem();
         adapter = new RecyclerAdapterSecond(entries);
@@ -43,13 +47,30 @@ public class VodkaFragment extends Fragment {
         recyclerView.setItemAnimator(itemAnimator);
         adapter.notifyDataSetChanged();
 
+        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView,
+                new RecyclerTouchListener.ClickListener() {
+
+                    @Override
+                    public void onClick(View view, int position) {
+                        Intent intent = new Intent(getActivity(), SecondActivity.class);
+                        intent.putExtra(KEY, vodka[position]);
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onLongClick(View view, int position) {
+
+                    }
+                }
+
+        ));
 
         return view;
     }
 
     private ArrayList getNewItem() {
 
-        String[] vodka = getResources().getStringArray(R.array.visky);
+
 
         ArrayList<NewsItem> results = new ArrayList<>();
         NewsItem newsData = new NewsItem();
@@ -88,6 +109,6 @@ public class VodkaFragment extends Fragment {
         adapter = new RecyclerAdapterSecond(entries);
         recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
-        Log.e("FUCK", "resume 0.3");
+        Log.e("FUCK", "resume 0.2");
     }
 }

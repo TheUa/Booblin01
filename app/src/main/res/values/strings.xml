@@ -14,8 +14,6 @@
     <string name="drinks">Вода, Кола, Соки</string>
 
 
-
-
     <string-array name="boohlo">
         <item>Виски</item>
         <item>Водка</item>
@@ -231,6 +229,9 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 
 </resources>
