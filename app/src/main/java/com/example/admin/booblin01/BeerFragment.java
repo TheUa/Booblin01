@@ -1,5 +1,6 @@
 package com.example.admin.booblin01;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -22,12 +23,16 @@ public class BeerFragment extends Fragment {
     private DatabaseHelper databaseHelper;
     private RecyclerAdapterSecond adapter;
     private ArrayList entries = new ArrayList<>();
+    private String[] beer;
+    private String KEY = "KEY";
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.sum_fragment, container, false);
 
         databaseHelper = new DatabaseHelper(getActivity());
+        beer = getResources().getStringArray(R.array.beer);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.sumRecycler);
 
@@ -43,13 +48,28 @@ public class BeerFragment extends Fragment {
         recyclerView.setItemAnimator(itemAnimator);
         adapter.notifyDataSetChanged();
 
+        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView,
+                new RecyclerTouchListener.ClickListener() {
 
+                    @Override
+                    public void onClick(View view, int position) {
+                        Intent intent = new Intent(getActivity(), SecondActivity.class);
+                        intent.putExtra(KEY, beer[position]);
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onLongClick(View view, int position) {
+
+                    }
+                }
+
+        ));
         return view;
     }
 
     private ArrayList getNewItem() {
 
-        String[] beer = getResources().getStringArray(R.array.beer);
 
         ArrayList<NewsItem> results = new ArrayList<>();
         NewsItem newsData = new NewsItem();

@@ -43,6 +43,10 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
     private Bundle extras;
     private String[] visky;
     private String[] vodka;
+    private String[] beer;
+    private String[] shot;
+    private String[] biter;
+    private String[] cola;
     private ArrayList entries = new ArrayList<>();
     private ImageView dropImage;
 
@@ -60,6 +64,10 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         databaseHelper = new DatabaseHelper(this);
         visky = getResources().getStringArray(R.array.visky);
         vodka = getResources().getStringArray(R.array.vodka);
+        beer = getResources().getStringArray(R.array.beer);
+        shot = getResources().getStringArray(R.array.shot);
+        biter = getResources().getStringArray(R.array.biter);
+        cola = getResources().getStringArray(R.array.cola);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -67,7 +75,6 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         final CollapsingToolbarLayout collapsingToolbarLayout =
                 (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
         collapsingToolbarLayout.setTitle(" ");
-//        collapsingToolbarLayout.setCollapsedTitleTextColor(Color.WHITE);
         AppBarLayout appBarLayout = (AppBarLayout) findViewById(R.id.app_bar);
 
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
@@ -283,6 +290,94 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
+            if (test.equals(beer[0])) {
+                dropImage.setBackgroundResource(R.drawable.guinness);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_GUINNESS);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_GUINNESS);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(beer[1])) {
+                dropImage.setBackgroundResource(R.drawable.kilkenny);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_KILKENNY);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_KILKENNY);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(beer[2])) {
+                dropImage.setBackgroundResource(R.drawable.harp);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_HARP);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_HARP);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(beer[3])) {
+                dropImage.setBackgroundResource(R.drawable.hoegaarden);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_HOEGAARDEN);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_HOEGAARDEN);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(beer[4])) {
+                dropImage.setBackgroundResource(R.drawable.leffe_blond);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_LEFFE_BLONDE);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_LEFFE_BLONDE);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(beer[5])) {
+                dropImage.setBackgroundResource(R.drawable.leffe_brune);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_LEFFE_BRUNE);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_LEFFE_BRUNE);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(beer[6])) {
+                dropImage.setBackgroundResource(R.drawable.corona);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_CORONA_EXTRA);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_CORONA_EXTRA);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(beer[7])) {
+                dropImage.setBackgroundResource(R.drawable.warsteiner);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_WARSCHTAINER);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_WARSCHTAINER);
+                        return;
+                    }
+                });
+            }
         }
         entries = setArchiveDB;
         adapter = new RecyclerAdapterSecond(entries);
@@ -362,7 +457,24 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_GREY_GOOSE);
                                             }else if (test.equals(vodka[4])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_SMIRNOFF);
+                                            }else if (test.equals(beer[0])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_GUINNESS);
+                                            }else if (test.equals(beer[1])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_KILKENNY);
+                                            }else if (test.equals(beer[2])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_HARP);
+                                            }else if (test.equals(beer[3])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_HOEGAARDEN);
+                                            }else if (test.equals(beer[4])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_LEFFE_BLONDE);
+                                            }else if (test.equals(beer[5])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_LEFFE_BRUNE);
+                                            }else if (test.equals(beer[6])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_CORONA_EXTRA);
+                                            }else if (test.equals(beer[7])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_WARSCHTAINER);
                                             }
+
                                         }
 
                                         adapter.notifyDataSetChanged();
@@ -396,48 +508,6 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         ));
     }
 
-    public ArrayList addRecyclerList() {
-        if (extras != null) {
-            if (test.equals(visky[0])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_JAMESON);
-            }
-            if (test.equals(visky[1])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS);
-            }
-            if (test.equals(visky[2])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS10);
-            }
-            if (test.equals(visky[3])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BUSHMILLS_BLACK);
-            }
-            if (test.equals(visky[4])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_RED_LABEL);
-            }
-            if (test.equals(visky[5])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BLACK_LABEL);
-            }
-            if (test.equals(visky[6])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_GOLD_LABEL);
-            }
-            if (test.equals(visky[7])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BELLS);
-            }
-            if (test.equals(visky[8])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_DJACK_DANIELS);
-            }
-            if (test.equals(visky[9])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_DJACK_SINGLE);
-            }
-            if (test.equals(visky[10])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_SINGLETON);
-            }
-            if (test.equals(visky[11])) {
-                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_CHIWAS_REGAL);
-            }
-        }
-        return setArchiveDB;
-    }
-
     private void customAlert(final String string) {
         AlertDialog alertDialog;
         final List<Integer> data = new ArrayList<>();
@@ -463,7 +533,6 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 int id = input.getCurrentItemPosition();
-                Log.e("FUCK", "точка: " + point[id]);
                 if (point[id] != 0) {
                     Calendar c = Calendar.getInstance();
                     SimpleDateFormat df = new SimpleDateFormat("dd MMM yyyy");
@@ -494,18 +563,5 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
 
     @Override
     public void onItemSelected(WheelPicker picker, Object data, int position) {
-        Log.e("FUCK", "=+-" + data.toString());
     }
-
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//        Log.e("FUCK", "RESUME");
-//        entries.clear();
-//        entries.addAll(addRecyclerList());
-//        adapter = new RecyclerAdapterSecond(entries);
-//        recyclerView.setAdapter(adapter);
-//        adapter.notifyDataSetChanged();
-//
-//    }
 }

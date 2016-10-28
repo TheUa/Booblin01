@@ -22,6 +22,8 @@ public class ShotFragment extends Fragment {
     private DatabaseHelper databaseHelper;
     private RecyclerAdapterSecond adapter;
     private ArrayList entries = new ArrayList<>();
+    private String KEY = "KEY";
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
