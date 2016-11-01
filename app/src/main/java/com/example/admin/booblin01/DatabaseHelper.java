@@ -81,6 +81,12 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
 
 
 
+    public static final String COLUMN_ID = BaseColumns._ID;
+    public static final String COLUMN_DATE = "archive_date";
+    public static final String COLUMN_SUMM = "archive_boohlo";
+    public static final String COLUMN_DOLG = "archive_dolg";
+
+
     public String newCrateTable;
 
     public String DynamicCreateTable(String key){
@@ -94,9 +100,7 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
     }
 
 
-    public static final String COLUMN_ID = BaseColumns._ID;
-    public static final String COLUMN_DATE = "archive_date";
-    public static final String COLUMN_SUMM = "archive_boohlo";
+
 
     private static final String DATABASE_CREATE_JAMESON = "create table "
             + DATABASE_JAMESON + " (" + BaseColumns._ID
