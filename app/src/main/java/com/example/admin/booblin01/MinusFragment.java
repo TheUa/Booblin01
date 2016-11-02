@@ -48,262 +48,262 @@ public class MinusFragment extends Fragment {
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView,
                 new RecyclerTouchListener.ClickListener() {
 
-            @Override
-            public void onClick(View view, int position){
+                    @Override
+                    public void onClick(View view, int position) {
 
-                switch (position){
-                    case 0:
+                        switch (position) {
+                            case 0:
 
-                        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                        builder.setTitle("Виски"); // заголовок для диалога
+                                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                                builder.setTitle("Виски"); // заголовок для диалога
 
-                        builder.setItems(R.array.visky, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int item) {
+                                builder.setItems(R.array.visky, new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int item) {
 
-                                switch (item){
+                                        switch (item) {
 
-                                    case 0:
-                                        Intent intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[0]);
-                                        startActivity(intent);
-                                        break;
-                                    case 1:
+                                            case 0:
+                                                Intent intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[0]);
+                                                startActivity(intent);
+                                                break;
+                                            case 1:
 //                                        intent = new Intent(getActivity(), ScrollingActivity.class);
 //                                        startActivity(intent);
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[1]);
-                                        startActivity(intent);
-                                        break;
-                                    case 2:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[2]);
-                                        startActivity(intent);
-                                        break;
-                                    case 3:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[3]);
-                                        startActivity(intent);
-                                        break;
-                                    case 4:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[4]);
-                                        startActivity(intent);
-                                        break;
-                                    case 5:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[5]);
-                                        startActivity(intent);
-                                        break;
-                                    case 6:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[6]);
-                                        startActivity(intent);
-                                        break;
-                                    case 7:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[7]);
-                                        startActivity(intent);
-                                        break;
-                                    case 8:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[8]);
-                                        startActivity(intent);
-                                        break;
-                                    case 9:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[9]);
-                                        startActivity(intent);
-                                        break;
-                                    case 10:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[10]);
-                                        startActivity(intent);
-                                        break;
-                                    case 11:
-                                        intent = new Intent(getActivity(), SecondActivity.class);
-                                        intent.putExtra(KEY, viski[11]);
-                                        startActivity(intent);
-                                        break;
-                                }
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[1]);
+                                                startActivity(intent);
+                                                break;
+                                            case 2:
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[2]);
+                                                startActivity(intent);
+                                                break;
+                                            case 3:
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[3]);
+                                                startActivity(intent);
+                                                break;
+                                            case 4:
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[4]);
+                                                startActivity(intent);
+                                                break;
+                                            case 5:
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[5]);
+                                                startActivity(intent);
+                                                break;
+                                            case 6:
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[6]);
+                                                startActivity(intent);
+                                                break;
+                                            case 7:
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[7]);
+                                                startActivity(intent);
+                                                break;
+                                            case 8:
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[8]);
+                                                startActivity(intent);
+                                                break;
+                                            case 9:
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[9]);
+                                                startActivity(intent);
+                                                break;
+                                            case 10:
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[10]);
+                                                startActivity(intent);
+                                                break;
+                                            case 11:
+                                                intent = new Intent(getActivity(), SecondActivity.class);
+                                                intent.putExtra(KEY, viski[11]);
+                                                startActivity(intent);
+                                                break;
+                                        }
 
-                            }
-                        });
-                        builder.setCancelable(true);
-                        builder.show();
+                                    }
+                                });
+                                builder.setCancelable(true);
+                                builder.show();
 
-                        break;
-                    case 1:
+                                break;
+                            case 1:
 
-                        builder = new AlertDialog.Builder(getActivity());
-                        builder.setTitle("Водка"); // заголовок для диалога
+                                builder = new AlertDialog.Builder(getActivity());
+                                builder.setTitle("Водка"); // заголовок для диалога
 
-                        builder.setItems(R.array.vodka, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int item) {
+                                builder.setItems(R.array.vodka, new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int item) {
 
-                                switch (item){
-                                    case 0:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 1" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                    case 1:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 2" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                    case 2:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 3" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                }
+                                        switch (item) {
+                                            case 0:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 1",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                            case 1:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 2",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                            case 2:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 3",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                        }
 
-                            }
-                        });
-                        builder.setCancelable(true);
-                        builder.show();
+                                    }
+                                });
+                                builder.setCancelable(true);
+                                builder.show();
 
-                        break;
+                                break;
 
-                    case 2:
-                        builder = new AlertDialog.Builder(getActivity());
-                        builder.setTitle("Пиво"); // заголовок для диалога
+                            case 2:
+                                builder = new AlertDialog.Builder(getActivity());
+                                builder.setTitle("Пиво"); // заголовок для диалога
 
-                        builder.setItems(R.array.beer, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int item) {
+                                builder.setItems(R.array.beer, new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int item) {
 
-                                switch (item){
-                                    case 0:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 1" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                    case 1:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 2" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                    case 2:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 3" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                }
+                                        switch (item) {
+                                            case 0:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 1",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                            case 1:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 2",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                            case 2:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 3",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                        }
 
-                            }
-                        });
-                        builder.setCancelable(true);
-                        builder.show();
-                        break;
-                    case 3:
-                        builder = new AlertDialog.Builder(getActivity());
-                        builder.setTitle("Настойки, Апперетивы, Ликеры"); // заголовок для диалога
+                                    }
+                                });
+                                builder.setCancelable(true);
+                                builder.show();
+                                break;
+                            case 3:
+                                builder = new AlertDialog.Builder(getActivity());
+                                builder.setTitle("Настойки, Апперетивы, Ликеры"); // заголовок для диалога
 
-                        builder.setItems(R.array.biter, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int item) {
+                                builder.setItems(R.array.biter, new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int item) {
 
-                                switch (item){
-                                    case 0:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 1" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                    case 1:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 2" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                    case 2:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 3" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                }
+                                        switch (item) {
+                                            case 0:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 1",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                            case 1:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 2",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                            case 2:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 3",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                        }
 
-                            }
-                        });
-                        builder.setCancelable(true);
-                        builder.show();
-                        break;
-                    case 4:
-                        builder = new AlertDialog.Builder(getActivity());
-                        builder.setTitle("Ром, Текила, Джин"); // заголовок для диалога
+                                    }
+                                });
+                                builder.setCancelable(true);
+                                builder.show();
+                                break;
+                            case 4:
+                                builder = new AlertDialog.Builder(getActivity());
+                                builder.setTitle("Ром, Текила, Джин"); // заголовок для диалога
 
-                        builder.setItems(R.array.shot, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int item) {
+                                builder.setItems(R.array.shot, new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int item) {
 
-                                switch (item){
-                                    case 0:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 1" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                    case 1:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 2" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                    case 2:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 3" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                }
+                                        switch (item) {
+                                            case 0:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 1",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                            case 1:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 2",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                            case 2:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 3",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                        }
 
-                            }
-                        });
-                        builder.setCancelable(true);
-                        builder.show();
-                        break;
-                    case 5:
-                        builder = new AlertDialog.Builder(getActivity());
-                        builder.setTitle("Напитки"); // заголовок для диалога
+                                    }
+                                });
+                                builder.setCancelable(true);
+                                builder.show();
+                                break;
+                            case 5:
+                                builder = new AlertDialog.Builder(getActivity());
+                                builder.setTitle("Напитки"); // заголовок для диалога
 
-                        builder.setItems(R.array.cola, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int item) {
+                                builder.setItems(R.array.cola, new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int item) {
 
-                                switch (item){
-                                    case 0:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 1" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                    case 1:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 2" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                    case 2:
-                                        Toast.makeText(getActivity(),
-                                                "Выбранный кот: 3" ,
-                                                Toast.LENGTH_SHORT).show();
-                                        break;
-                                }
+                                        switch (item) {
+                                            case 0:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 1",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                            case 1:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 2",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                            case 2:
+                                                Toast.makeText(getActivity(),
+                                                        "Выбранный кот: 3",
+                                                        Toast.LENGTH_SHORT).show();
+                                                break;
+                                        }
 
-                            }
-                        });
-                        builder.setCancelable(true);
-                        alertDialog = builder.create();
-                        alertDialog.getWindow().getAttributes().windowAnimations = R.style.CustomDialogAnim;
-                        alertDialog.show();
-                        break;
-                }
+                                    }
+                                });
+                                builder.setCancelable(true);
+                                alertDialog = builder.create();
+                                alertDialog.getWindow().getAttributes().windowAnimations = R.style.CustomDialogAnim;
+                                alertDialog.show();
+                                break;
+                        }
 
-            }
+                    }
 
-            @Override
-            public void onLongClick(View view, int position) {
+                    @Override
+                    public void onLongClick(View view, int position) {
 
-                Toast.makeText(getActivity(), "Не залипай", Toast.LENGTH_LONG)
-                        .show();
-            }
-        }));
+                        Toast.makeText(getActivity(), "Не залипай", Toast.LENGTH_LONG)
+                                .show();
+                    }
+                }));
         return view;
     }
 

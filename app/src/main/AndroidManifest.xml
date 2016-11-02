@@ -23,8 +23,11 @@
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme">
-        </activity>
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".DolgActivity"
+            android:label="@string/title_activity_dolg"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

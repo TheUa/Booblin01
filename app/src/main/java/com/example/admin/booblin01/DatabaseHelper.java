@@ -80,7 +80,6 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
     public static final String DATABASE_RED_BULL = "redbull";
 
 
-
     public static final String COLUMN_ID = BaseColumns._ID;
     public static final String COLUMN_DATE = "archive_date";
     public static final String COLUMN_SUMM = "archive_boohlo";
@@ -89,7 +88,7 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
 
     public String newCrateTable;
 
-    public String DynamicCreateTable(String key){
+    public String DynamicCreateTable(String key) {
         newCrateTable = "create table "
                 + DATABASE_SINGLETON + " (" + BaseColumns._ID
                 + " integer primary key autoincrement, "
@@ -98,8 +97,6 @@ public class DatabaseHelper extends SQLiteOpenHelper implements BaseColumns {
 
         return newCrateTable;
     }
-
-
 
 
     private static final String DATABASE_CREATE_JAMESON = "create table "
