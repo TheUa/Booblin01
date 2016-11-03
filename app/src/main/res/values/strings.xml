@@ -12,7 +12,11 @@
     <string name="biter">Настойки, Ликеры, Мартини</string>
     <string name="hard">Ром, Джин, Текила</string>
     <string name="drinks">Вода, Кола, Соки</string>
+
+    <string name="menu">Меню</string>
     <string name="add">Добавить вкусняшку</string>
+    <string name="coctail">Списать коктейль</string>
+    <string name="dolg">Должники</string>
 
     <string-array name="mix">
         <item>Jameson</item>

@@ -379,6 +379,292 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                     }
                 });
             }
+            if (test.equals(shot[0])) {
+                dropImage.setBackgroundResource(R.drawable.gordons);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_GORDONS);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_GORDONS);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(shot[1])) {
+                dropImage.setBackgroundResource(R.drawable.cuervo_silver);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_JOSE_CUERVO_SILVER);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_JOSE_CUERVO_SILVER);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(shot[2])) {
+                dropImage.setBackgroundResource(R.drawable.cuervo_gold);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_JOSE_CUERVO_GOLD);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_JOSE_CUERVO_GOLD);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(shot[3])) {
+                dropImage.setBackgroundResource(R.drawable.morgan_gold);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_MORGAN_GOLD);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_MORGAN_GOLD);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(shot[4])) {
+                dropImage.setBackgroundResource(R.drawable.morgan_white);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_MORGAN_WHITE);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_MORGAN_WHITE);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(shot[5])) {
+                dropImage.setBackgroundResource(R.drawable.morgan_black);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_MORGAN_BLACK);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_MORGAN_BLACK);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(shot[6])) {
+                dropImage.setBackgroundResource(R.drawable.morgan_spiced);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_MORGAN_SPICED);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_MORGAN_SPICED);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[0])) {
+                dropImage.setBackgroundResource(R.drawable.jager);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_JAGERMEISTER);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_JAGERMEISTER);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[1])) {
+                dropImage.setBackgroundResource(R.drawable.becher);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BECHEROVKA);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_BECHEROVKA);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[2])) {
+                dropImage.setBackgroundResource(R.drawable.martini_bainco);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_MARTINI_BIANCO);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_MARTINI_BIANCO);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[3])) {
+                dropImage.setBackgroundResource(R.drawable.martini_rosso);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_MARTINI_ROSSO);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_MARTINI_ROSSO);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[4])) {
+                dropImage.setBackgroundResource(R.drawable.martini_dry);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_MARTINI_EXTRA_DRY);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_MARTINI_EXTRA_DRY);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[5])) {
+                dropImage.setBackgroundResource(R.drawable.sambuca);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_SAMBUKA);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_SAMBUKA);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[6])) {
+                dropImage.setBackgroundResource(R.drawable.pisang);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_PISANG);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_PISANG);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[7])) {
+                dropImage.setBackgroundResource(R.drawable.triple);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_TRIPLE_SEC);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_TRIPLE_SEC);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[8])) {
+                dropImage.setBackgroundResource(R.drawable.peach);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_PEAC_TREE);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_PEAC_TREE);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[9])) {
+                dropImage.setBackgroundResource(R.drawable.xenta);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_ABSENT);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_ABSENT);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[10])) {
+                dropImage.setBackgroundResource(R.drawable.baileys);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_BAILEYS);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_BAILEYS);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(biter[11])) {
+                dropImage.setBackgroundResource(R.drawable.khalua);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_KHALUA);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_KHALUA);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(cola[0])) {
+                dropImage.setBackgroundResource(R.drawable.cola);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_COLA);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_COLA);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(cola[1])) {
+                dropImage.setBackgroundResource(R.drawable.sprite);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_SPRITE);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_SPRITE);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(cola[2])) {
+                dropImage.setBackgroundResource(R.drawable.tonic);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_TONIC);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_TONIC);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(cola[3])) {
+                dropImage.setBackgroundResource(R.drawable.morsh_still);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_MORSHIN_STILL);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_MORSHIN_STILL);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(cola[4])) {
+                dropImage.setBackgroundResource(R.drawable.morsh_gas);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_MORSHIN_GAS);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_MORSHIN_GAS);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(cola[5])) {
+                dropImage.setBackgroundResource(R.drawable.borjomi);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_COLA);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_COLA);
+                        return;
+                    }
+                });
+            }
+            if (test.equals(cola[6])) {
+                dropImage.setBackgroundResource(R.drawable.red_bull);
+                setArchiveDB = databaseHelper.getNewsItem(databaseHelper.DATABASE_RED_BULL);
+                fabClick.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        customAlert(databaseHelper.DATABASE_RED_BULL);
+                        return;
+                    }
+                });
+            }
         }
         entries = setArchiveDB;
         adapter = new RecyclerAdapterSecond(entries);
@@ -474,6 +760,58 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_CORONA_EXTRA);
                                             } else if (test.equals(beer[7])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_WARSCHTAINER);
+                                            } else if (test.equals(shot[0])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_GORDONS);
+                                            } else if (test.equals(shot[1])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_JOSE_CUERVO_SILVER);
+                                            } else if (test.equals(shot[2])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_JOSE_CUERVO_GOLD);
+                                            } else if (test.equals(shot[3])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_MORGAN_GOLD);
+                                            } else if (test.equals(shot[4])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_MORGAN_WHITE);
+                                            } else if (test.equals(shot[5])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_MORGAN_BLACK);
+                                            } else if (test.equals(shot[6])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_MORGAN_SPICED);
+                                            } else if (test.equals(biter[0])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_JAGERMEISTER);
+                                            } else if (test.equals(biter[1])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BECHEROVKA);
+                                            } else if (test.equals(biter[2])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_MARTINI_BIANCO);
+                                            } else if (test.equals(biter[3])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_MARTINI_ROSSO);
+                                            } else if (test.equals(biter[4])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_MARTINI_EXTRA_DRY);
+                                            } else if (test.equals(biter[5])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_SAMBUKA);
+                                            } else if (test.equals(biter[6])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_PISANG);
+                                            } else if (test.equals(biter[7])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_TRIPLE_SEC);
+                                            } else if (test.equals(biter[8])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_PEAC_TREE);
+                                            } else if (test.equals(biter[9])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_ABSENT);
+                                            } else if (test.equals(biter[10])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BAILEYS);
+                                            } else if (test.equals(biter[11])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_KHALUA);
+                                            } else if (test.equals(cola[0])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_COLA);
+                                            } else if (test.equals(cola[1])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_SPRITE);
+                                            } else if (test.equals(cola[2])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_TONIC);
+                                            } else if (test.equals(cola[3])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_MORSHIN_STILL);
+                                            } else if (test.equals(cola[4])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_MORSHIN_GAS);
+                                            } else if (test.equals(cola[5])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_BORJOMI);
+                                            } else if (test.equals(cola[6])) {
+                                                databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_RED_BULL);
                                             }
 
                                         }
