@@ -29,8 +29,11 @@
         <activity
             android:name="com.example.admin.booblin01.Main2Activity"
             android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.admin.booblin01.DolgActivity"
+            android:label="@string/title_activity_dolg"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

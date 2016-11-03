@@ -80,6 +80,7 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             boolean isShow = false;
             int scrollRange = -1;
+
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
                 if (scrollRange == -1) {
@@ -447,31 +448,31 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_SINGLETON);
                                             } else if (test.equals(visky[11])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_CHIWAS_REGAL);
-                                            }else if (test.equals(vodka[0])) {
+                                            } else if (test.equals(vodka[0])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_NEMIROFF);
-                                            }else if (test.equals(vodka[1])) {
+                                            } else if (test.equals(vodka[1])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_NEMIROFF_LEXX);
-                                            }else if (test.equals(vodka[2])) {
+                                            } else if (test.equals(vodka[2])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_NEMIROFF_PAPER);
-                                            }else if (test.equals(vodka[3])) {
+                                            } else if (test.equals(vodka[3])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_GREY_GOOSE);
-                                            }else if (test.equals(vodka[4])) {
+                                            } else if (test.equals(vodka[4])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_SMIRNOFF);
-                                            }else if (test.equals(beer[0])) {
+                                            } else if (test.equals(beer[0])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_GUINNESS);
-                                            }else if (test.equals(beer[1])) {
+                                            } else if (test.equals(beer[1])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_KILKENNY);
-                                            }else if (test.equals(beer[2])) {
+                                            } else if (test.equals(beer[2])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_HARP);
-                                            }else if (test.equals(beer[3])) {
+                                            } else if (test.equals(beer[3])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_HOEGAARDEN);
-                                            }else if (test.equals(beer[4])) {
+                                            } else if (test.equals(beer[4])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_LEFFE_BLONDE);
-                                            }else if (test.equals(beer[5])) {
+                                            } else if (test.equals(beer[5])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_LEFFE_BRUNE);
-                                            }else if (test.equals(beer[6])) {
+                                            } else if (test.equals(beer[6])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_CORONA_EXTRA);
-                                            }else if (test.equals(beer[7])) {
+                                            } else if (test.equals(beer[7])) {
                                                 databaseHelper.deleteNewsItem(newsItems, databaseHelper.DATABASE_WARSCHTAINER);
                                             }
 
@@ -511,8 +512,21 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
     private void customAlert(final String string) {
         AlertDialog alertDialog;
         final List<Integer> data = new ArrayList<>();
-        for (int i = -1000; i <= 1000; i = i + 50)
-            data.add(i);
+        if ((test.equals(beer[0])) || (test.equals(beer[1])) || (test.equals(beer[2])) || (test.equals(beer[3])) ||
+                (test.equals(beer[4])) || (test.equals(beer[5]))) {
+            for (int i = -10000; i <= 10000; i = i + 500)
+                data.add(i);
+        } else {
+        if ((test.equals(beer[6])) || (test.equals(beer[7])) || test.equals(cola[0]) ||
+                (test.equals(cola[1])) || (test.equals(cola[2])) || test.equals(cola[3]) ||
+                (test.equals(cola[4])) || (test.equals(cola[5])) || (test.equals(cola[6]))) {
+            for (int i = -20; i <= 20; i = i + 1)
+                data.add(i);
+        } else {
+            for (int i = -1000; i <= 1000; i = i + 50)
+                data.add(i);
+        }}
+
         final Integer[] point = data.toArray(new Integer[data.size()]);
         final LayoutInflater inflater = this.getLayoutInflater();
         View alertLayout = inflater.inflate(R.layout.picker, null);

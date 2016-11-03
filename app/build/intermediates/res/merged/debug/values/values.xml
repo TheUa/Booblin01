@@ -77,49 +77,6 @@
         <item>Red Bull</item>
 
     </string-array>
-    <string-array name="point">
-        <item>-1000</item>
-        <item>-950</item>
-        <item>-900</item>
-        <item>-850</item>
-        <item>-800</item>
-        <item>-750</item>
-        <item>-700</item>
-        <item>-650</item>
-        <item>-600</item>
-        <item>-550</item>
-        <item>-500</item>
-        <item>-450</item>
-        <item>-400</item>
-        <item>-350</item>
-        <item>-300</item>
-        <item>-250</item>
-        <item>-200</item>
-        <item>-150</item>
-        <item>-100</item>
-        <item>-50</item>
-        <item>0</item>
-        <item>50</item>
-        <item>100</item>
-        <item>150</item>
-        <item>200</item>
-        <item>250</item>
-        <item>300</item>
-        <item>350</item>
-        <item>400</item>
-        <item>450</item>
-        <item>500</item>
-        <item>550</item>
-        <item>600</item>
-        <item>650</item>
-        <item>700</item>
-        <item>750</item>
-        <item>800</item>
-        <item>850</item>
-        <item>900</item>
-        <item>950</item>
-        <item>1000</item>
-    </string-array>
     <string-array name="shot">
         <item>Gordons</item>
         <item>Jose Cuervo Silver</item>
@@ -873,6 +830,7 @@
     <string name="on">ОК</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="title_activity_dolg">DolgActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="v7_preference_off">OFF</string>

@@ -1953,48 +1953,6 @@
         <item>Nemiroff с перцем</item>
         <item>Grey Goose</item>
         <item>Smirnoff</item>
-    </string-array><string-array name="point">
-        <item>-1000</item>
-        <item>-950</item>
-        <item>-900</item>
-        <item>-850</item>
-        <item>-800</item>
-        <item>-750</item>
-        <item>-700</item>
-        <item>-650</item>
-        <item>-600</item>
-        <item>-550</item>
-        <item>-500</item>
-        <item>-450</item>
-        <item>-400</item>
-        <item>-350</item>
-        <item>-300</item>
-        <item>-250</item>
-        <item>-200</item>
-        <item>-150</item>
-        <item>-100</item>
-        <item>-50</item>
-        <item>0</item>
-        <item>50</item>
-        <item>100</item>
-        <item>150</item>
-        <item>200</item>
-        <item>250</item>
-        <item>300</item>
-        <item>350</item>
-        <item>400</item>
-        <item>450</item>
-        <item>500</item>
-        <item>550</item>
-        <item>600</item>
-        <item>650</item>
-        <item>700</item>
-        <item>750</item>
-        <item>800</item>
-        <item>850</item>
-        <item>900</item>
-        <item>950</item>
-        <item>1000</item>
     </string-array><string-array name="boohlo">
         <item>Виски</item>
         <item>Водка</item>
@@ -2116,7 +2074,7 @@
         <item>Leffe Brown</item>
         <item>Corona Extra</item>
         <item>Warschtainer</item>
-    </string-array><string name="on">ОК</string><string name="drinks">Вода, Кола, Соки</string><string name="title_activity_main2">Main2Activity</string><string name="navigation_drawer_close">Close navigation drawer</string><string name="hard">Ром, Джин, Текила</string><string name="viski">Виски</string></file><file path="C:\WorkFile\Booblin01\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </string-array><string name="on">ОК</string><string name="drinks">Вода, Кола, Соки</string><string name="title_activity_main2">Main2Activity</string><string name="title_activity_dolg">DolgActivity</string><string name="navigation_drawer_close">Close navigation drawer</string><string name="hard">Ром, Джин, Текила</string><string name="viski">Виски</string></file><file path="C:\WorkFile\Booblin01\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -2131,7 +2089,7 @@
     </style><style name="CustomDialogAnim" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
         <item name="android:windowExitAnimation">@anim/dialog_exit</item>
-    </style></file><file path="C:\WorkFile\Booblin01\app\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen></file><file name="icon" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\icon.png" qualifiers="" type="drawable"/><file name="hoegaarden" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\hoegaarden.png" qualifiers="" type="drawable"/><file name="corona" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\corona.png" qualifiers="" type="drawable"/><file name="leffe_blond" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\leffe_blond.jpg" qualifiers="" type="drawable"/><file name="warsteiner" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\warsteiner.png" qualifiers="" type="drawable"/><file name="guinness" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\guinness.png" qualifiers="" type="drawable"/><file name="harp" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\harp.png" qualifiers="" type="drawable"/><file name="kilkenny" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\kilkenny.png" qualifiers="" type="drawable"/><file name="leffe_brune" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\leffe_brune.jpg" qualifiers="" type="drawable"/><file name="coctail" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\coctail.png" qualifiers="" type="drawable"/><file name="add" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\add.png" qualifiers="" type="drawable"/><file name="dolg" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\dolg.png" qualifiers="" type="drawable"/></source><source path="C:\WorkFile\Booblin01\app\build\generated\res\rs\debug"/><source path="C:\WorkFile\Booblin01\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="C:\WorkFile\Booblin01\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/></declare-styleable><declare-styleable name="AppCompatSeekBar"><attr name="android:thumb"/><attr format="reference" name="tickMark"/><attr format="color" name="tickMarkTint"/><attr name="tickMarkTintMode">
+    </style></file><file path="C:\WorkFile\Booblin01\app\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen></file><file name="icon" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\icon.png" qualifiers="" type="drawable"/><file name="hoegaarden" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\hoegaarden.png" qualifiers="" type="drawable"/><file name="corona" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\corona.png" qualifiers="" type="drawable"/><file name="leffe_blond" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\leffe_blond.jpg" qualifiers="" type="drawable"/><file name="warsteiner" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\warsteiner.png" qualifiers="" type="drawable"/><file name="guinness" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\guinness.png" qualifiers="" type="drawable"/><file name="harp" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\harp.png" qualifiers="" type="drawable"/><file name="kilkenny" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\kilkenny.png" qualifiers="" type="drawable"/><file name="leffe_brune" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\leffe_brune.jpg" qualifiers="" type="drawable"/><file name="coctail" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\coctail.png" qualifiers="" type="drawable"/><file name="add" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\add.png" qualifiers="" type="drawable"/><file name="dolg" path="C:\WorkFile\Booblin01\app\src\main\res\drawable\dolg.png" qualifiers="" type="drawable"/><file name="content_dolg" path="C:\WorkFile\Booblin01\app\src\main\res\layout\content_dolg.xml" qualifiers="" type="layout"/><file name="activity_dolg" path="C:\WorkFile\Booblin01\app\src\main\res\layout\activity_dolg.xml" qualifiers="" type="layout"/></source><source path="C:\WorkFile\Booblin01\app\build\generated\res\rs\debug"/><source path="C:\WorkFile\Booblin01\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="C:\WorkFile\Booblin01\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/></declare-styleable><declare-styleable name="AppCompatSeekBar"><attr name="android:thumb"/><attr format="reference" name="tickMark"/><attr format="color" name="tickMarkTint"/><attr name="tickMarkTintMode">
             
             <enum name="src_over" value="3"/>
             
