@@ -12,8 +12,18 @@
     <string name="biter">Настойки, Ликеры, Мартини</string>
     <string name="hard">Ром, Джин, Текила</string>
     <string name="drinks">Вода, Кола, Соки</string>
+    <string name="add">Добавить вкусняшку</string>
 
-
+    <string-array name="mix">
+        <item>Jameson</item>
+        <item>Bushmills</item>
+        <item>Bells</item>
+        <item>Jose Cuervo Silver</item>
+        <item>Gordons</item>
+        <item>Jagermeister</item>
+        <item>Smirnoff</item>
+        <item>Cap.Morg. Gold</item>
+    </string-array>
     <string-array name="boohlo">
         <item>Виски</item>
         <item>Водка</item>

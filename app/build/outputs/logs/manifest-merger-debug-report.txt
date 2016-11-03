@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml
 		INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:5:5-31:19
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:5:5-35:19
 MERGED from [com.android.support:design:25.0.0] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\design\25.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\AndroidManifest.xml:25:5-20
@@ -65,7 +65,7 @@ ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:19:9-22:47
 	android:name
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:20:13-46
 activity#com.example.admin.booblin01.Main2Activity
-ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:23:9-26:56
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:23:9-26:47
 	android:label
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:25:13-57
 	android:theme
@@ -73,13 +73,21 @@ ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:23:9-26:56
 	android:name
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:24:13-42
 activity#com.example.admin.booblin01.DolgActivity
-ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:27:9-30:56
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:27:9-30:47
 	android:label
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:29:13-56
 	android:theme
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:30:13-44
 	android:name
 		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:28:13-41
+activity#com.example.admin.booblin01.AddActivity
+ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:31:9-34:56
+	android:label
+		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:33:13-55
+	android:theme
+		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:34:13-44
+	android:name
+		ADDED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml:32:13-40
 uses-sdk
 INJECTED from C:\WorkFile\Booblin01\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.0.0] C:\WorkFile\Booblin01\app\build\intermediates\exploded-aar\com.android.support\design\25.0.0\AndroidManifest.xml:21:5-23:62

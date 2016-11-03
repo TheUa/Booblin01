@@ -13,27 +13,38 @@
     tools:context="com.example.admin.booblin01.AddActivity"
     tools:showIn="@layout/activity_add">
 
-    <Spinner
-        android:id="@+id/add_spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"/>
 
-    <TextView
-        android:id="@+id/add_item"
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/add_spinner"
-        android:layout_margin="16dp"/>
+        app:cardElevation="4dp">
 
-    <Button
-        android:id="@+id/add_button"
-        android:text="@string/on"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_alignTop="@+id/add_spinner"
-        android:layout_toRightOf="@+id/add_spinner"
-        android:layout_toEndOf="@+id/add_spinner"
-        android:layout_marginStart="20dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/add_button"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/on" />
+
+            <Spinner
+                android:id="@+id/add_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_button"
+                android:entries="@array/mix"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:id="@+id/add_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_spinner"
+                android:layout_margin="16dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
 </RelativeLayout>

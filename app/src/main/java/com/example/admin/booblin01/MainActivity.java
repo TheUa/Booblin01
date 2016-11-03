@@ -1,6 +1,7 @@
 package com.example.admin.booblin01;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -127,11 +128,12 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_add) {
+            Intent intent = new Intent(this, AddActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_coctail) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_dolg) {
 
         } else if (id == R.id.nav_share) {
 

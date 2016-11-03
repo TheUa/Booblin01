@@ -3,21 +3,17 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_add"
             android:icon="@drawable/add"
-            android:title="Добавить вкусняшку" />
+            android:title="@string/add" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_coctail"
             android:icon="@drawable/coctail"
             android:title="Списать коктейль" />
         <item
             android:id="@+id/nav_dolg"
             android:icon="@drawable/dolg"
             android:title="Должники" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Настройки" />
     </group>
 
     <item android:title="Communicate">
