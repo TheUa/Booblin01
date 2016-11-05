@@ -1,5 +1,6 @@
 package com.example.admin.booblin01;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -23,6 +24,7 @@ public class BiterFragment extends Fragment {
     private RecyclerAdapterSecond adapter;
     private ArrayList entries = new ArrayList<>();
     private String KEY = "KEY";
+    private String[] biter;
 
 
     @Override
@@ -30,6 +32,7 @@ public class BiterFragment extends Fragment {
         View view = inflater.inflate(R.layout.sum_fragment, container, false);
 
         databaseHelper = new DatabaseHelper(getActivity());
+        biter = getResources().getStringArray(R.array.biter);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.sumRecycler);
 
@@ -45,6 +48,23 @@ public class BiterFragment extends Fragment {
         recyclerView.setItemAnimator(itemAnimator);
         adapter.notifyDataSetChanged();
 
+        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView,
+                new RecyclerTouchListener.ClickListener() {
+
+                    @Override
+                    public void onClick(View view, int position) {
+                        Intent intent = new Intent(getActivity(), SecondActivity.class);
+                        intent.putExtra(KEY, biter[position]);
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onLongClick(View view, int position) {
+
+                    }
+                }
+
+        ));
 
         return view;
     }

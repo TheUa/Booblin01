@@ -173,13 +173,13 @@ public class AddActivity extends AppCompatActivity
         if (id == R.id.nav_add) {
 
         } else if (id == R.id.nav_coctail) {
-
+            Toast.makeText(this, "В разработке", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_dolg) {
-
+            Toast.makeText(this, "В разработке", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_share) {
-
+            Toast.makeText(this, "В разработке", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_send) {
-
+            Toast.makeText(this, "В разработке", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
