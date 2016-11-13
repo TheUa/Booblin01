@@ -35,7 +35,7 @@ import java.util.List;
 /**
  * Created by Admin on 04.08.2016.
  */
-public class SecondActivity extends AppCompatActivity implements WheelPicker.OnItemSelectedListener {
+public class SecondActivity extends AppCompatActivity implements WheelPicker.OnItemSelectedListener  {
 
     private String KEY = "KEY";
     private String test;
@@ -77,14 +77,6 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
 
         final CollapsingToolbarLayout collapsingToolbarLayout =
                 (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
@@ -869,15 +861,16 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
             for (int i = -10000; i <= 10000; i = i + 500)
                 data.add(i);
         } else {
-        if ((test.equals(beer[6])) || (test.equals(beer[7])) || test.equals(cola[0]) ||
-                (test.equals(cola[1])) || (test.equals(cola[2])) || test.equals(cola[3]) ||
-                (test.equals(cola[4])) || (test.equals(cola[5])) || (test.equals(cola[6]))) {
-            for (int i = -20; i <= 20; i = i + 1)
-                data.add(i);
-        } else {
-            for (int i = -1000; i <= 1000; i = i + 50)
-                data.add(i);
-        }}
+            if ((test.equals(beer[6])) || (test.equals(beer[7])) || test.equals(cola[0]) ||
+                    (test.equals(cola[1])) || (test.equals(cola[2])) || test.equals(cola[3]) ||
+                    (test.equals(cola[4])) || (test.equals(cola[5])) || (test.equals(cola[6]))) {
+                for (int i = -20; i <= 20; i = i + 1)
+                    data.add(i);
+            } else {
+                for (int i = -1000; i <= 1000; i = i + 50)
+                    data.add(i);
+            }
+        }
 
         final Integer[] point = data.toArray(new Integer[data.size()]);
         final LayoutInflater inflater = this.getLayoutInflater();
@@ -930,39 +923,4 @@ public class SecondActivity extends AppCompatActivity implements WheelPicker.OnI
     @Override
     public void onItemSelected(WheelPicker picker, Object data, int position) {
     }
-@SuppressWarnings("StatementWithEmptyBody")
-@Override
-public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.nav_menu) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-        }
-        if (id == R.id.nav_add) {
-
-        } else if (id == R.id.nav_coctail) {
-        Toast.makeText(this, "В разработке", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_dolg) {
-        Toast.makeText(this, "В разработке", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_share) {
-        Toast.makeText(this, "В разработке", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_send) {
-        Toast.makeText(this, "В разработке", Toast.LENGTH_SHORT).show();
-        }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-        }
-
-@Override
-public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-        drawer.closeDrawer(GravityCompat.START);
-        } else {
-        super.onBackPressed();
-        }
 }
