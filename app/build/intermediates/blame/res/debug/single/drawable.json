@@ -16,12 +16,12 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\leffe_blond.jpg"
     },
     {
-        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\morsh_still.jpg",
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\morsh_still.jpg"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\morgan_white.jpg",
@@ -52,12 +52,12 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\khalua.png",
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\khalua.png"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
@@ -148,12 +148,12 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grey_goose.png",
-        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\grey_goose.png"
-    },
-    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\martini_dry.jpg",
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\martini_dry.jpg"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grey_goose.png",
+        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\grey_goose.png"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
@@ -240,12 +240,12 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\jameson.jpg"
     },
     {
-        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.0\\res\\drawable\\design_snackbar_background.xml"
-    },
-    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\borjomi.jpg",
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\borjomi.jpg"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.0\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\minus.png",
@@ -348,6 +348,10 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\refresh.png",
+        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\refresh.png"
+    },
+    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\guinness.png",
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\guinness.png"
     },
@@ -368,12 +372,12 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\smirnoff.jpg"
     },
     {
-        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\singleton.jpg",
-        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\singleton.jpg"
-    },
-    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cola.png",
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\cola.png"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\singleton.jpg",
+        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\singleton.jpg"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
@@ -396,12 +400,12 @@
         "source": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red.jpg",
-        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\red.jpg"
-    },
-    {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\triple.JPG",
         "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\triple.JPG"
+    },
+    {
+        "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red.jpg",
+        "source": "C:\\WorkFile\\Booblin01\\app\\src\\main\\res\\drawable\\red.jpg"
     },
     {
         "merged": "C:\\WorkFile\\Booblin01\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",

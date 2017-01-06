@@ -50,7 +50,7 @@ public final class R {
 		public static final int wheel_date_picker_year_tv = 0x7f0d00ba;
 	}
 	public static final class layout {
-		public static final int view_wheel_date_picker = 0x7f04005b;
+		public static final int view_wheel_date_picker = 0x7f04005c;
 	}
 	public static final class string {
 		public static final int Day = 0x7f060015;

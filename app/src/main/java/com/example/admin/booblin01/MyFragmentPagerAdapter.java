@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class MyFragmentPagerAdapter extends FragmentStatePagerAdapter {
-    private String[] mTabTitles = new String[] { "Виски", "Водка", "Ром/Текила/Джин", "Ликеры/Настойки", "Напитки"};
+    private String[] mTabTitles = new String[] { "Виски", "Водка", "Пиво", "Ром/Текила/Джин", "Ликеры/Настойки", "Напитки"};
 
     public MyFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -33,12 +33,15 @@ public class MyFragmentPagerAdapter extends FragmentStatePagerAdapter {
                 VodkaFragment vodkaFragment = new VodkaFragment();
                 return vodkaFragment;
             case 2:
+                BeerFragment beerFragment = new BeerFragment();
+                return beerFragment;
+            case 3:
                 ShotFragment shotFragment = new ShotFragment();
                 return shotFragment;
-            case 3:
+            case 4:
                 BiterFragment biterFragment = new BiterFragment();
                 return biterFragment;
-            case 4:
+            case 5:
                 ColaFragment colaFragment = new ColaFragment();
                 return colaFragment;
 
